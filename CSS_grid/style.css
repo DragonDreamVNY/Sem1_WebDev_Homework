@@ -1,0 +1,173 @@
+/*
+ _                   _____    __    __      
+| |__  _   _  /\   /\\_   \/\ \ \/\ \ \/\_/\
+| '_ \| | | | \ \ / / / /\/  \/ /  \/ /\_ _/
+| |_) | |_| |  \ V /\/ /_/ /\  / /\  /  / \ 
+|_.__/ \__, |   \_/\____/\_\ \/\_\ \/   \_/ 
+       |___/                                
+*/
+
+/*-------------------------------------
+		Table of contents
+		1. Reset
+		2. Typography
+		3. Basic layout
+		4. Widgets
+		5. Media items
+		6. Forms
+		7. Media queries
+		8. IE specific styles
+---------------------------------------*/
+
+/* ------------------------------
+1. RESET
+------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+
+/*------------------------------ 
+2. Typography
+------------------------------*/
+body{
+	background-color: #ECF6CE;
+	font-family: sans-serif, arial, lucida;
+}
+
+h1{
+	text-align: center;
+	color: #084B8A;
+	font-family: Georgia, serif;
+
+}
+/* ------------------------------
+3. Basic layout
+------------------------------*/
+
+#container{
+	width: 960px;
+	background-color: grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fullwidth {
+	float: left;
+	margin:6px;
+	width: 930px;
+	padding: 5px;
+	background-color: lightgrey;
+	border: solid lightblue 4px;	
+}
+
+.halfwidth{
+	display: inline-block;
+	float: left;
+	margin: 6px;
+	padding: 5px;
+	width: 450px;
+	background-color: lightgreen;
+	border: double blue 4px;
+}
+
+.thirdwidth{
+	display: inline-block;
+	float: left;
+	margin: 6px;
+	padding: 5px;
+	width: 290px;
+	background-color: lightblue;
+	border: double blue 4px;
+}
+
+.quarterwidth{
+	display: inline-block;
+	float: left;
+	margin: 6px;
+	padding: 5px;
+	width: 210px;
+	background-color: lightblue;
+	border: double blue 4px;	
+}
+
+
+
+.clear{
+	clear: both;
+}
+
+/* ------------------------------
+4. Widgets
+------------------------------*/
+
+/* ------------------------------
+5. Media items
+------------------------------*/
+
+/* ------------------------------
+6. Forms
+------------------------------*/
+
+
+
+/* ------------------------------
+7. Media queries
+------------------------------*/
+
+/* Ref: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+/* Ref: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+@media screen 
+  and (max-width: 800px) {
+
+    p{
+    	font-size: 1.33em;
+    }
+
+    #container{
+		background-color: grey;
+		width: 760px;
+    }
+	.fullwidth{
+    	width: 730px;
+    }
+    
+    .halfwidth{
+    	width: 330px;
+    }
+	.thirdwidth
+	{
+    	width: 223px;
+    }
+
+    .quarterwidth{
+		width:160px;
+    }
+	/*
+	.col-1, .col-2,
+	.col-3, .col-4,
+	.col-5, .col-6,
+	.col-7, .col-8,
+	.col-9, .col-10,
+	.col-11, .col-12{
+		display: block;;
+		float: left;
+	}
+
+	*/
+
+}
+
+
+
+
+
+
+/* ------------------------------
+8. IE specific styles
+------------------------------*/
