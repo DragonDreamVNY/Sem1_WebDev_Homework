@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>This is JavaScript</title>
+
+	<script>
+    function fireAlert()
+      {
+        alert("I am an alert box!");
+      }
+    // window.onload=fireAlert();
+  </script>
+</head>
+<body>
+
+	 <script type="text/javascript">
+	 /*puts a h2 element on page at render*/
+	   document.write('<h2>Driven by JavaScript</h2>');  
+
+	 /*prompt box*/
+	 	var response = prompt('Please enter your name', 'Hello USER');
+		if (response != null && response != ''){
+		  console.log(response);
+		} 
+		/*confirm box*/
+	var response = confirm('Press OK to continue');
+	if (response == true){
+	  console.log('User Responded with OK');
+	} else {
+	  console.log('User Responded with Cancel');
+	}
+
+
+	//for loop test
+	const int LOW = 10;
+    const int HIGH = 200;
+    var i;
+    String output = "";
+        
+    for(var i = 10; i<100; i++){
+            
+            // print numbers multiples of 4 but not 5
+            // similar to "leap year" program
+        if ( (i%4 == 0) && (i%5 != 0) ){
+                console.log(i + ", ");
+        }
+        
+    }
+
+	 </script>
+
+</body>
+</html>
