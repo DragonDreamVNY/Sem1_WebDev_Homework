@@ -111,8 +111,22 @@ Tablet
 			padding-left: 120px
 		}
 
-		.textBox_onImage, .textBox_onAbout{
+		.textBox_onImage 
+		{
 			display: none;
+		}
+		
+		.textBox_onAbout{
+			top: 1550px; 
+    		margin-left: 60px;
+			width: 470px; 
+		}
+		
+
+		.textBox_onReviews{
+   			top: 1490px; 
+    		margin-left: 60px;
+			width: 470px; 
 		}
 
 		.recipe{margin-left: 0px;}
@@ -229,10 +243,21 @@ Mobile
 			padding-left: 120px
 		}
 
-		.textBox_onImage, .textBox_onAbout{
+		.textBox_onImage{
 			display: none;
 		}
 
+		.textBox_onAbout{
+			top: 1770px; 
+    		margin-left: 10px;
+			width: 380px; 
+		}
+
+		.textBox_onReviews{
+   			top: 1630px; 
+    		margin-left: 50px;
+			width: 360px; 
+		}
 		.recipe{margin-left: 0px;}
 
 		.footWrapper{

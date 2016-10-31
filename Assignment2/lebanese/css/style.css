@@ -28,7 +28,7 @@ CUSTOM FONT
 @font-face {
 		font-family: ElMessiri-Regular;
 	 	src: 
-	 		url(fonts/ElMessiri-Regular.eot.otf) format('opentype'),
+	 		url(fonts/ElMessiri-Regular.otf format('opentype'),
 	  		url(fonts/ElMessiri-Regular.eot.woff) format('woff'),
 	 		url(fonts/ElMessiri-Regular.eot.ttf) format('truetype'),		
 	  		url(fonts/ElMessiri-Regular.eot.svg) format('svg'),
@@ -149,7 +149,7 @@ header specific
 
 .headWrapper{
 	height: 100px;
-	width:100%; 
+	width: 100%; 
 	position: relative;
 }
 
@@ -158,7 +158,7 @@ footer specific
 ----------------*/
 .footWrapper{
 	height: 300px;
-	width:100%; 
+	width: 100%; 
 	position: relative;
 }
 
@@ -221,6 +221,12 @@ footer specific
 	left: 25px;
 }
 
+.socialIcons{
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+
 .copyright{
 	margin-top: 50px;
 	padding-bottom: 20px;
@@ -269,6 +275,32 @@ div.youtubeWrapper iframe {
 }
 
 
+
+
+
+
+.thumbDescriptList {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+
+}
+
+.thumbDescriptList li{
+	 margin-top: 10px;
+}
+
+.thumbDescriptList a{
+  text-decoration: none;
+  color: #FEFBDF;
+}
+
+.thumbDescriptList:hover a:hover {
+	color: #692E45; /*wine_dregs */
+	background-color: #B29DB3; /*pastel_purple*/
+}
+
+
 /*---------
 Header Banner
 ---------*/
@@ -293,7 +325,7 @@ Header Banner
 
 
 /*------------------
-Restaurant | Recipe| Recipe section
+Restaurant | Recipe | Recipe section
 ------------------*/
 .rrr{
 	padding-top: 0px;
@@ -307,7 +339,7 @@ ABOUT banner
 ---------*/
 .textBox_onAbout{
 	position: absolute; 
-    top: 835px; 
+    top: 875px; 
     margin-left: 220px;
 
 	width: 300px; 
@@ -331,13 +363,91 @@ ABOUT banner
 
 /*=========================================
 
-RSTAURANT PAGE
+RESTAURANT PAGE
 
 =========================================*/
 
 .rest_main{
-
 }
+
+.textBox_onReviews{
+	position: absolute; 
+    top: 1070px; 
+    margin-left: 220px;
+
+	width: 300px; 
+	color: white; 
+	text-decoration: none;
+	font: 19px Helvetica, Sans-Serif; 
+	
+	letter-spacing: +2px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px; 
+}
+
+.textBox_onReviews a{
+	color: white; 
+	text-decoration: none;
+	font: 19px Helvetica, Sans-Serif; 
+	font-weight: lighter;
+	letter-spacing: +2px;  
+}
+
+/*=========================================
+
+Recipes Page
+
+=========================================*/
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+  text-decoration: none;
+}
+.read-more-target a{
+  text-decoration: none;
+  color: #FEFBDF;
+}
+
+.read-more-target:hover a:hover {
+	color: #692E45; /*wine_dregs */
+	background-color: #B29DB3; /*pastel_purple*/
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #FFFFFF;
+  font-size: 1em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+
+
 
 /*=========================================
 
