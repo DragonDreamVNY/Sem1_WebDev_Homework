@@ -286,9 +286,17 @@ div.youtubeWrapper iframe {
 	text-align: justify;
 }
 
+.thumbDescript a{
+	text-decoration: none;
+	color: #FEFBDF; /*light_yellow*/
+}
 
+.thumbDescript:hover a:hover{
+	text-decoration: none;
+	color: #692E45; /*wine_dregs */
+	background-color: #B29DB3; /*pastel_purple*/
 
-
+}
 
 
 .thumbDescriptList {
@@ -398,7 +406,7 @@ ABOUT banner
 
 .textBox_onReviews{
 	position: absolute; 
-    top: 1110px; 
+    top: 2020px; 
     margin-left: 220px;
 
 	width: 300px; 
