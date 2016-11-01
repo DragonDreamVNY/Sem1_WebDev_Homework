@@ -26,13 +26,12 @@ CUSTOM FONT
 @font-face {
 	font-family: ElMessiri-Regular;
  	src: 
- 		url(fonts/ElMessiri-Regular.otf format('opentype'),
+ 		url(fonts/ElMessiri-Regular.otf) format('opentype'),
   		url(fonts/ElMessiri-Regular.eot.woff) format('woff'),
  		url(fonts/ElMessiri-Regular.eot.ttf) format('truetype'),		
   		url(fonts/ElMessiri-Regular.eot.svg) format('svg'),
   		url(fonts/ElMessiri-Regular.eot.eot) format('embedded-opentype'); /*IE 6-8*/
 	font-weight: normal;
-	font-size: normal;
 }
 /*=========================================*/
 
@@ -140,17 +139,18 @@ nav ul li:hover a:hover {
 header specific 
 ----------------*/
 .trim-top{
-	margin-top: 0;
-	padding-top: o;
+	margin-top: 0px;
+	padding-top: 0px;
 }   
+
 .trim-bottom{
-	margin-bottom: : 0;
-	padding-bottom: 0;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .trim-all{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 .logo{
@@ -606,9 +606,6 @@ nav ul li:hover a:hover {
 
 -------------------------------------
 */
-#container{
-	background-color: #FEFBDF;!important /*light_yellow*/
-}
 
 .raisin_black{
 	background-color: #271721;
