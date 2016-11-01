@@ -9,8 +9,7 @@
 
 
 
-/*
-=============  
+/*=============  
  _____                                        _           
 |_   _|   _ _ __   ___   __ _ _ __ __ _ _ __ | |__  _   _ 
   | || | | | '_ \ / _ \ / _` | '__/ _` | '_ \| '_ \| | | |
@@ -18,24 +17,23 @@
   |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
       |___/|_|          |___/          |_|          |___/
 
-=============  
-*/
+=============*/
 
 /*----------
 CUSTOM FONT 
 ------------ 
 */
 @font-face {
-		font-family: ElMessiri-Regular;
-	 	src: 
-	 		url(fonts/ElMessiri-Regular.otf format('opentype'),
-	  		url(fonts/ElMessiri-Regular.eot.woff) format('woff'),
-	 		url(fonts/ElMessiri-Regular.eot.ttf) format('truetype'),		
-	  		url(fonts/ElMessiri-Regular.eot.svg) format('svg'),
-	  		url(fonts/ElMessiri-Regular.eot.eot) format('embedded-opentype'); /*IE 6-8*/
-		font-weight: normal;
-		font-size: normal;
-	}
+	font-family: ElMessiri-Regular;
+ 	src: 
+ 		url(fonts/ElMessiri-Regular.otf format('opentype'),
+  		url(fonts/ElMessiri-Regular.eot.woff) format('woff'),
+ 		url(fonts/ElMessiri-Regular.eot.ttf) format('truetype'),		
+  		url(fonts/ElMessiri-Regular.eot.svg) format('svg'),
+  		url(fonts/ElMessiri-Regular.eot.eot) format('embedded-opentype'); /*IE 6-8*/
+	font-weight: normal;
+	font-size: normal;
+}
 /*=========================================*/
 
 body {
@@ -44,10 +42,10 @@ body {
 	font-family: ElMessiri-Regular, serif;
 	font-size: 1.22em;
 	cursor: default;
-	
 }
 
-h1, h3 {
+h1, 
+h3 {
 	text-align: center;
 }
 
@@ -60,30 +58,19 @@ h1 a:link {
 	color:#FFFFFF;
 	text-decoration:none; 
 } 
-h1 a:visited {color:#FFFFFF;} 
-h1 a:hover {color:#B29DB3;}
 
-h2{
-	text-align: left;
-}
+h1 a:visited { color:#FFFFFF; } 
+h1 a:hover { color:#B29DB3; }
 
-article ul {
-	margin-left: 20px;
-}
+h2{ text-align: left; }
 
+article ul { margin-left: 20px; }
 
+article a { color: #FFD300; }
 
-article a {
-	color: #FFD300;
-}
+article a:hover { font-weight: bold; }
 
-article a:hover {
-	font-weight: bold;
-}
-
-p{
-	font-size: 1em;
-} 
+p { font-size: 1em; } 
 
 /*
 =============  
@@ -203,20 +190,20 @@ footer specific
 }
 
 /* Footer Terms and Cookies */
-.footLinks ul li {
-	color: #FFFFFF;
-	text-decoration: none;
-	list-style: none;
-}	
 
-.footLinks ul a {
-	color: #FFFFFF;
-}
+
+.footLinks ul a { color: #FFFFFF; }
 
 .footLinks a:link {
 	color:#FFFFFF;
 	text-decoration:none; 
 }
+
+.footLinks ul li {
+	color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+}	
 
 .footLinks ul li:hover a:hover {
 	color: #692E45; /*red brown*/
@@ -242,15 +229,17 @@ footer specific
 .copyright{
 	margin-top: 50px;
 	padding-bottom: 20px;
-
 }
 /*---------
+MEDIA
 
-MEDIA / Video / Audio related
+Video / Audio 
+related styles
 
 ---------*/
 
-audio, video {
+audio, 
+video {
  width: 100%;
 }​
 
@@ -265,69 +254,9 @@ div.youtubeWrapper iframe {
 	height: 320px;
 }
 
-.images{
-	height: 100%; 
-	width: 100%; 
-	object-fit: contain;
-}
-.thumb_images{
-	height: 100%; 
-	width: 95%; 
-	object-fit: contain;
-	margin-left:10px; 
-	margin-right: 10px; 
-	margin-top: 10px;
-}
-
-.thumbDescript{
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-bottom: 10px;
-	text-align: justify;
-}
-
-.thumbDescript a{
-	text-decoration: none;
-	color: #FEFBDF; /*light_yellow*/
-}
-
-.thumbDescript:hover a:hover{
-	text-decoration: none;
-	color: #692E45; /*wine_dregs */
-	background-color: #B29DB3; /*pastel_purple*/
-
-}
-
-
-.thumbDescriptList {
-  text-decoration: none;
-  list-style: none;
-  margin-left: 10px;
-
-}
-
-.thumbDescriptList li{
-	 margin-top: 10px;
-}
-
-.thumbDescriptList a{
-  text-decoration: none;
-  color: #FEFBDF;
-}
-
-.thumbDescriptList:hover a:hover {
-	color: #692E45; /*wine_dregs */
-	background-color: #B29DB3; /*pastel_purple*/
-}
-
-
 /*---------
 Header Banner
 ---------*/
-.banner{
-
-}
-
 .textBox_onImage{
 	position: absolute; 
     top: 285px; 
@@ -345,7 +274,7 @@ Header Banner
 
 
 /*---------------------------
-Restaurant | Recipe | Recipe section
+Restaurant | Recipe | Recipe [RRR] section
 ---------------------------*/
 .rrr{
 	padding-top: 0px;
@@ -354,8 +283,81 @@ Restaurant | Recipe | Recipe section
 	margin-bottom: 0px;
 }
 
+.rrr_Descript{ 
+	letter-spacing: 1px;
+	margin-left: 10px;
+}
+
+.rrr_Descript a{
+	text-decoration: none;
+	color: #FFFFFF; /*white*/
+}
+
+.rrr_Descript:hover a:hover{
+	text-decoration: none;
+	color: #B29DB3; /*pastel_purple*/
+	font-weight: normal;
+}
+
+/*image stretch to size of div*/
+.images{
+	height: 100%; 
+	width: 100%; 
+	object-fit: contain;
+}
+
+.thumb_images{
+	height: 100%; 
+	width: 95%; 
+	object-fit: contain;
+	margin-left:10px; 
+	margin-right: 10px; 
+	margin-top: 10px;
+}
+
+/* col-5 : Restuarant and Recipes Text Description */
+.thumbDescript{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.thumbDescript a{
+	text-decoration: none;
+	color: #FEFBDF; /*light_yellow*/
+}
+
+.thumbDescript:hover a:hover{
+	text-decoration: none;
+	color: #692E45; /*wine_dregs */
+	background-color: #B29DB3; /*pastel_purple*/
+}
+
+/* col-5 Recipe Ingredients/Instructions */
+
+.thumbDescriptList {
+	text-decoration: none;
+	list-style: none;
+	margin-left: 10px;
+}
+
+.thumbDescriptList li{
+	margin-top: 10px;
+}
+
+.thumbDescriptList a{
+	text-decoration: none;
+	color: #FEFBDF; /*light_yellow*/
+}
+
+.thumbDescriptList:hover a:hover {
+	color: #692E45; /*wine_dregs */
+	background-color: #B29DB3; /*pastel_purple*/
+}
+
 /*---------
-ABOUT banner
+ABOUT banner on HOMEPAGE
 ---------*/
 .textBox_onAbout{
 	position: absolute; 
@@ -448,6 +450,11 @@ ABOUT banner
 
 =========================================*/
 
+/*---------------*/
+/* Show more/less styles */
+
+/* Ref: https://codepen.io/Idered/pen/AeBgF  */
+/*---------------*/
 .read-more-state {
   display: none;
 }
@@ -498,6 +505,35 @@ ABOUT banner
 
 
 /*=========================================
+           ____   ____  _    _ _______ 
+     /\   |  _ \ / __ \| |  | |__   __|
+    /  \  | |_) | |  | | |  | |  | |   
+   / /\ \ |  _ <| |  | | |  | |  | |   
+  / ____ \| |_) | |__| | |__| |  | |   
+ /_/    \_\____/ \____/ \____/   |_|   
+                                                                                    
+=========================================*/
+
+
+.textBox_onFamily{
+	position: absolute; 
+    top: 275px; 
+    margin-left: 180px;
+
+	width: 400px; 
+	color: white; 
+	font: 19px Helvetica, Sans-Serif; 
+	font-weight: lighter;
+	letter-spacing: +2px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px; 
+}
+
+
+
+
+/*=========================================
 
    _____ ____  _      ____  _    _ _____   _____ 
   / ____/ __ \| |    / __ \| |  | |  __ \ / ____|
@@ -517,6 +553,7 @@ red_brown  		#A12B10		161 43 16
 light_yellow	#FEFBDF 	254 251 223
 pastel_purple   #B29DB3		178 157 179	
 wine_dregs 		#692E45		105 46 69
+white: ;		#FFFFFF    	255 255 255  
 -------------------------------------
 
 Nav Buttons Colours

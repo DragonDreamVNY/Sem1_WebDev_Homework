@@ -1,170 +1,178 @@
-/*
+
+/*=============  
+ __  __          _ _          ___                  _           
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
  _                   _____    __    __      
 | |__  _   _  /\   /\\_   \/\ \ \/\ \ \/\_/\
 | '_ \| | | | \ \ / / / /\/  \/ /  \/ /\_ _/
 | |_) | |_| |  \ V /\/ /_/ /\  / /\  /  / \ 
 |_.__/ \__, |   \_/\____/\_\ \/\_\ \/   \_/ 
        |___/                                                     
-*/	
+
+=============*/				
 
 
-/*						 
-=============  
- __  __          _ _          ___                  _           
-|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
-| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
-| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
-|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
-=============   
-                                                               
-*/								 
-.tablet_rrr{
-			width: 280px;		
-		}
-/* ----------------
-Tablet 
-----------------  */
+
+/* =============
+  _______    _     _      _   
+ |__   __|  | |   | |    | |  
+    | | __ _| |__ | | ___| |_ 
+    | |/ _` | '_ \| |/ _ \ __|
+    | | (_| | |_) | |  __/ |_ 
+    |_|\__,_|_.__/|_|\___|\__|
+                              
+                              
+=============  */
 /* Ref: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
 /* Ref: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
 
 @media (max-width: 800px){
-		#container {
-			width: 760px;
-		}
+	#container {
+		width: 760px;
+	}
 
-		p{
-    	font-size: 1.33em;
-    	}
+	p{
+	font-size: 1.33em;
+	}
 
-    	.col-1, .col-2,
-		.col-3, .col-4,
-		.col-5, .col-6,
-		.col-7, .col-8,
-		.col-9, .col-10,
-		.col-11,.col-12{
-			display: block;
-			float: left;
-		}
+	.col-1, .col-2,
+	.col-3, .col-4,
+	.col-5, .col-6,
+	.col-7, .col-8,
+	.col-9, .col-10,
+	.col-11,.col-12{
+		display: block;
+		float: left;
+	}
 
-		.blank-left-1, .blank-right-1,
-		.blank-left-2, .blank-right-2,
-		.blank-left-3, .blank-right-3,
-		.blank-left-4, .blank-right-4,
-		.blank-left-5, .blank-right-5,
-		.blank-left-6, .blank-right-6,
-		.blank-left-7, .blank-right-7,
-		.blank-left-8, .blank-right-8,
-		.blank-left-9, .blank-right-9,
-		.blank-left-10, .blank-right-10,
-		.blank-left-11, .blank-right-11{
-			padding-left: 10px;
-			padding-right: 10px;
-		}
-		
-		.col-2,
-		.col-3,
-		.col-4,
-		.col-5,
-		.col-6,
-		.col-7,
-		.col-8, 
-		.col-9,
-		.col-10,
-		.col-11,
-		.col-12{
-			width: 730px;
-		}
+	.blank-left-1, .blank-right-1,
+	.blank-left-2, .blank-right-2,
+	.blank-left-3, .blank-right-3,
+	.blank-left-4, .blank-right-4,
+	.blank-left-5, .blank-right-5,
+	.blank-left-6, .blank-right-6,
+	.blank-left-7, .blank-right-7,
+	.blank-left-8, .blank-right-8,
+	.blank-left-9, .blank-right-9,
+	.blank-left-10, .blank-right-10,
+	.blank-left-11, .blank-right-11{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8, 
+	.col-9,
+	.col-10,
+	.col-11,
+	.col-12{
+		width: 730px;
+	}
 
-		nav{
-			float: left;
-			position: relative;
+	nav{
+		float: left;
+		position: relative;
+	}
 
+	nav ul li{
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 420px;
+		display: none;
+		font-size: 1.33em;
 		}
 	
-		nav ul li{
-			margin-left: 0px;
-			margin-right: 0px;
-			width: 420px;
-			display: none;
-			font-size: 1.33em;
- 		}
-		
-		nav  ul li.rmenu {
-			display: block;
+	nav  ul li.rmenu { display: block; }	
 
-		}	
-		nav ul li a{
-			width: 740px;
-			height: 30px;
-			padding-top: 8px;
-			padding-bottom: 8px;
- 		}
-		
-		nav ul:hover li {
-			display: block;
-		}
-
-		.logo{
-			display: block;
-			float: left;
-			width: 400px;
-			padding-left: 120px
-		}
-
-		.textBox_onImage 
-		{
-			display: none;
-		}
-		
-		.textBox_onAbout{
-			top: 1550px; 
-    		margin-left: 60px;
-			width: 470px; 
-		}
-		
-
-		.textBox_onReviews{
-   			top: 4030px; 
-    		margin-left: 60px;
-			width: 470px; 
-		}
-
-		.recipe{margin-left: 0px;}
-
-		.footWrapper{
-			display: block;
-			float: left;
-			width: auto;
-			height: auto;
-		}
-
-		.footNav, .footLinks{
-			margin-left: 100px;
-		}
-
-		.footItems li{
-			font-size: 1.43em;
-			font-weight: bolder;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-
-		.homeButton{ 
-			margin-left: 50px; 
-		}
-		
-		.tablet_rrr{
-			width: 320px;		
+	nav ul li a{
+		width: 740px;
+		height: 30px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		}
 	
+	nav ul:hover li { display: block; }
 
-} /*end Tablet*/
+	.logo{
+		display: block;
+		float: left;
+		width: 400px;
+		padding-left: 120px
+	}
+
+	.textBox_onImage 
+	{ display: none; }
+	
+	.textBox_onAbout{
+		top: 1550px; 
+		margin-left: 60px;
+		width: 470px; 
+	}
+	
+
+	.textBox_onReviews{
+			top: 4030px; 
+		margin-left: 60px;
+		width: 470px; 
+	}
+		
+	.textBox_onFamily{
+		top: 275px; 
+		margin-left: 60px;
+		width: 470px; 
+	}
 
 
 
-/* ----------------
-Mobile 
-----------------  */
+	.recipe{ margin-left: 0px; }
+
+	.footWrapper{
+		display: block;
+		float: left;
+		width: auto;
+		height: auto;
+	}
+
+	.footNav, 
+	.footLinks{ 
+		margin-left: 100px; 
+	}
+
+	.footItems li{
+		font-size: 1.43em;
+		font-weight: bolder;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.homeButton{ margin-left: 50px; }
+	
+	/* Restaurants | Recipes | Reviews 12-col on HomePage*/
+	.tablet_rrr{ width: 330px; }
+	
+
+} /*end Tablet Responsive*/
+
+
+
+/*===============
+  __  __       _     _ _       
+ |  \/  |     | |   (_) |      
+ | \  / | ___ | |__  _| | ___  
+ | |\/| |/ _ \| '_ \| | |/ _ \ 
+ | |  | | (_) | |_) | | |  __/ 
+ |_|  |_|\___/|_.__/|_|_|\___| 
+                               
+                               
+===============*/
 @media (max-width: 481px){
 		#container {
 			width: 440px;
@@ -258,6 +266,14 @@ Mobile
     		margin-left: 50px;
 			width: 360px; 
 		}
+
+		.textBox_onFamily{
+			top: 175px; 
+    		margin-left: 10px;
+			width: 400px; 
+		}
+
+
 		.recipe{margin-left: 0px;}
 
 		.footWrapper{
