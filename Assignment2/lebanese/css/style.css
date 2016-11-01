@@ -45,24 +45,37 @@ body {
 }
 
 h1, 
+h2,
 h3 {
 	text-align: center;
+	color:#FFFFFF; 
+	text-decoration: none;
 }
 
-h1 a {
+h1 a,
+h2 a {
 	font-family: helvetica, sans-serif; 
 	text-decoration: none;
 }
 
-h1 a:link {
+h1 a:link, 
+h2 a:link{
 	color:#FFFFFF;
 	text-decoration:none; 
 } 
 
-h1 a:visited { color:#FFFFFF; } 
-h1 a:hover { color:#B29DB3; }
+h1 a:visited, 
+h2 a:visited
+{ 
+	color:#FFFFFF; 
+} 
 
-h2{ text-align: left; }
+h1 a:hover, 
+h2 a:hover{ 
+	color:#B29DB3; 
+}
+
+
 
 article ul { margin-left: 20px; }
 
@@ -321,6 +334,7 @@ Restaurant | Recipe | Recipe [RRR] section
 	margin-right: 10px;
 	padding-bottom: 10px;
 	text-align: left;
+	letter-spacing: +1px; 
 }
 
 .thumbDescript a{
@@ -408,7 +422,7 @@ ABOUT banner on HOMEPAGE
 
 .textBox_onReviews{
 	position: absolute; 
-    top: 2020px; 
+    top: 2200px; 
     margin-left: 220px;
 
 	width: 300px; 
@@ -530,8 +544,26 @@ ABOUT banner on HOMEPAGE
 	padding: 10px; 
 }
 
+.caption_onFeatureVideo{
+	text-align: center;
+} 
 
+/*=========================================
 
+  _    _                      _                   _             
+ | |  | |                    | |                 (_)            
+ | |__| | ___  _   _ ___  ___| | _____  ___ _ __  _ _ __   __ _ 
+ |  __  |/ _ \| | | / __|/ _ \ |/ / _ \/ _ \ '_ \| | '_ \ / _` |
+ | |  | | (_) | |_| \__ \  __/   <  __/  __/ |_) | | | | | (_| |
+ |_|  |_|\___/ \__,_|___/\___|_|\_\___|\___| .__/|_|_| |_|\__, |
+                                           | |             __/ |
+                                           |_|            |___/ 
+                                                 
+
+=========================================*/
+
+/* sections and articles need headers for crawlers and readers */
+.for_seo{ display: none; }
 
 /*=========================================
 
