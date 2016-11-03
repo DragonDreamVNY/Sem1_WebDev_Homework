@@ -116,6 +116,7 @@ nav ul {}
 nav ul li {
 	background-color: #B29DB3; /*pastel-purple*/
 	color: #271721; /*raisin_black*/
+	font-family: Helvetica, Sans-Serif;
 }
 	
 nav  ul li  .rmenu {}
@@ -422,7 +423,7 @@ ABOUT banner on HOMEPAGE
 
 .textBox_onReviews{
 	position: absolute; 
-    top: 2200px; 
+    top: 2080px; 
     margin-left: 220px;
 
 	width: 300px; 

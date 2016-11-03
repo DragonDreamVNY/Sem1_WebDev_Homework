@@ -118,15 +118,16 @@
 	}
 
 	.textBox_onReviews{
-		top: 4150px; 
+		top: 4040px; 
 		margin-left: 60px;
 		width: 470px; 
 	}
 		
 	.textBox_onFamily{
-		top: 275px; 
+		display: none;
+		/*top: 275px; 
 		margin-left: 60px;
-		width: 470px; 
+		width: 470px; */
 	}
 
 
@@ -261,15 +262,16 @@
 		}
 
 		.textBox_onReviews{
-   			top: 4765px; 
+   			top: 4485px; 
     		margin-left: 10px;
 			width: 360px; 
 		}
 
 		.textBox_onFamily{
-			top: 175px; 
+			display: none;
+			/*top: 175px; 
     		margin-left: 10px;
-			width: 400px; 
+			width: 400px; */
 		}
 
 
