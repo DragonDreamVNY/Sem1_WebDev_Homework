@@ -1,0 +1,690 @@
+/*
+ _                   _____    __    __      
+| |__  _   _  /\   /\\_   \/\ \ \/\ \ \/\_/\
+| '_ \| | | | \ \ / / / /\/  \/ /  \/ /\_ _/
+| |_) | |_| |  \ V /\/ /_/ /\  / /\  /  / \ 
+|_.__/ \__, |   \_/\____/\_\ \/\_\ \/   \_/ 
+       |___/                                                     
+VINCENT LEE K00223361
+HDIP IN SOFTWARE DEV: ASSIGNEMENT 3
+*/	
+
+/*============= 
+  _______       ____  _      ______    ____  ______     
+ |__   __|/\   |  _ \| |    |  ____|  / __ \|  ____|    
+    | |  /  \  | |_) | |    | |__    | |  | | |__       
+    | | / /\ \ |  _ <| |    |  __|   | |  | |  __|      
+    | |/ ____ \| |_) | |____| |____  | |__| | |         
+   _|_/_/____\_\____/|______|______|_ \____/|_|__ _____ 
+  / ____/ __ \| \ | |__   __|  ____| \ | |__   __/ ____|
+ | |   | |  | |  \| |  | |  | |__  |  \| |  | | | (___  
+ | |   | |  | | . ` |  | |  |  __| | . ` |  | |  \___ \ 
+ | |___| |__| | |\  |  | |  | |____| |\  |  | |  ____) |
+  \_____\____/|_| \_|  |_|  |______|_| \_|  |_| |_____/  
+
+TABLE OF CONTENTS
+[0] RESET STYLES 
+[1] TYPOGRAPHY
+[2] NAV MENU
+[2.1] HOMEPAGE
+[2.2] PARALLAX
+[3] SOCIAL MEDIA
+[4] CONTACT FORM
+[5] FOOTER
+
+[6] VISIT
+[7] COLLECTIONS
+[8] EXHIBITIONS
+[9] EDUCATION
+[10] EVENTS
+[11] VENUE HIRE
+[12] RESIDENCY
+[13] SUPPORT IMMA
+=============*/ 
+
+
+/*============= 
+  _____  ______  _____ ______ _______ 
+ |  __ \|  ____|/ ____|  ____|__   __|
+ | |__) | |__  | (___ | |__     | |   
+ |  _  /|  __|  \___ \|  __|    | |   
+ | | \ \| |____ ____) | |____   | |   
+ |_|  \_\______|_____/|______|  |_|   
+
+[0] RESET STYLES                            
+=============*/                               
+.padding-0{
+	padding-right: -15px; /* Removes the right gap */
+    padding-left: -15px;  /* Removes the left gap */
+}
+
+.margin-0{
+	margin-right: -15px; /* Removes the right gap */
+    margin-left: -15px;  /* Removes the left gap */
+}
+
+
+/*=============  
+ _____                                        _           
+|_   _|   _ _ __   ___   __ _ _ __ __ _ _ __ | |__  _   _ 
+  | || | | | '_ \ / _ \ / _` | '__/ _` | '_ \| '_ \| | | |
+  | || |_| | |_) | (_) | (_| | | | (_| | |_) | | | | |_| |
+  |_| \__, | .__/ \___/ \__, |_|  \__,_| .__/|_| |_|\__, |
+      |___/|_|          |___/          |_|          |___/
+[1] TYPOGRAPHY
+=============*/
+
+/*----------
+CUSTOM FONT 
+------------ 
+*/
+@font-face {
+	font-family: TruenoRg;
+ 	src: 
+ 		url(fonts/TruenoRg.otf) format('opentype'),
+  		url(fonts/TruenoRg.woff) format('woff'),
+ 		url(fonts/TruenoRg.ttf) format('truetype'),		
+  		url(fonts/TruenoRg.svg) format('svg'),
+  		url(fonts/TruenoRg.eot) format('embedded-opentype'); /*IE 6-8*/
+	font-weight: normal;
+
+	font-family: TruenoBd;
+ 	src: 
+ 		url(fonts/TruenoBd.otf) format('opentype'),
+  		url(fonts/TruenoBd.woff) format('woff'),
+ 		url(fonts/TruenoBd.ttf) format('truetype'),		
+  		url(fonts/TruenoBd.svg) format('svg'),
+  		url(fonts/TruenoBd.eot) format('embedded-opentype'); /*IE 6-8*/
+	font-weight: normal;
+}
+/*=========================================*/
+
+body {
+	color: #F6F6F6;
+	font-family: TruenoRg, sans-serif;
+	cursor: default;
+	padding-top: 80px; /*for scroll nav*/
+}
+
+h1, 
+h2,
+h3 {
+	text-align: center;
+	color:#F6F6F6; 
+	text-decoration: none;
+}
+
+h1 a,
+h2 a {
+	font-family: helvetica, sans-serif; 
+	text-decoration: none;
+}
+
+h1 a:link, 
+h2 a:link{
+	color:#F6F6F6;
+	text-decoration:none; 
+} 
+
+h1 a:visited, 
+h2 a:visited
+{ 
+	color:#F6F6F6; 
+} 
+
+h1 a:hover, 
+h2 a:hover{ 
+	color:#FFBE6A; 
+}
+
+
+
+article ul { margin-left: 20px; }
+
+article a { color: #FFD300; }
+
+article a:hover { font-weight: bold; }
+
+p { font-size: 1em; } 
+
+/*
+=============  
+  _   _               __  __                   
+ | \ | |             |  \/  |                  
+ |  \| | __ ___   __ | \  / | ___ _ __  _   _  
+ | . ` |/ _` \ \ / / | |\/| |/ _ \ '_ \| | | | 
+ | |\  | (_| |\ V /  | |  | |  __/ | | | |_| | 
+ |_|_\_|\__,_| \_/ _ |_|  |_|\___|_| |_|\__,_| 
+  / ____| |       | |                          
+ | (___ | |_ _   _| | ___  ___                 
+  \___ \| __| | | | |/ _ \/ __|                
+  ____) | |_| |_| | |  __/\__ \                
+ |_____/ \__|\__, |_|\___||___/                
+              __/ |                            
+             |___/                             
+layout inherited from BOOTSTRAP
+[2] NAV MENU
+=============                                              
+*/
+
+/*=============
+	LOGO
+ =============*/
+.brand{
+	min-width: 150px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	z-index: 1000;
+}
+
+.navbar-brand{
+
+}
+
+/*========================== 
+scroll animated shrink style
+========================== */
+
+nav .navbar{
+  background-color:#6D7897;
+   /* Animation */
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav .navbar.shrink {
+  min-height: 35px;
+}
+
+/*-- end shrink style--*/
+
+nav .nav ul {
+	float:right;
+}
+
+.navbar-fnt{
+	font-size: 1.33em !important;
+	font-family: Verdana, Sans-Serif;
+}
+
+.navbar-default {
+  background-color: #6d7897; 
+  border-color: #333355; 
+}
+.navbar-default .navbar-brand {
+  color: #f6f6f6; 
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffbe6a; 
+}
+.navbar-default .navbar-text {
+  color: #f6f6f6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f6f6f6; 
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffbe6a; 
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbe6a; 
+  background-color: #333355; 
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbe6a; 
+  background-color: #333355; 
+}
+.navbar-default .navbar-toggle {
+  border-color: #333355; 
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #333355; 
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f6f6f6; 
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f6f6f6; 
+}
+.navbar-default .navbar-link {
+  color: #f6f6f6; 
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbe6a; 
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f6f6f6; 
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbe6a; 
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbe6a; 
+    background-color: #333355; 
+  }
+}
+
+.text-center{
+
+}
+.navbar-toggle{
+	border: none;
+	width: 50%;
+	float: none;
+	margin-right: 0;
+}
+
+
+/*
+=============
+  _    _  ____  __  __ ______ 
+ | |  | |/ __ \|  \/  |  ____|
+ | |__| | |  | | \  / | |__   
+ |  __  | |  | | |\/| |  __|  
+ | |  | | |__| | |  | | |____ 
+ |_|  |_|\____/|_|  |_|______|
+                                                  
+[2.1] HOMEPAGE                             
+                              
+============= 
+*/
+
+.hero{
+	background: rgba(0, 0, 0, 0.5); 
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 1.66em;
+    border: 5px solid #F6F6F6;
+    position: absolute;
+    left: 20px;
+}
+
+
+/*
+=============  
+                                 
+[2.1] PARALLAX
+============= 
+*/
+
+.bg {
+  background: url('../images/BANNER_HERO.jpg');
+  position: fixed;
+  background-size:cover;
+}
+
+
+
+
+/*
+=============  
+   _____            _       _   __  __          _ _       
+  / ____|          (_)     | | |  \/  |        | (_)      
+ | (___   ___   ___ _  __ _| | | \  / | ___  __| |_  __ _ 
+  \___ \ / _ \ / __| |/ _` | | | |\/| |/ _ \/ _` | |/ _` |
+  ____) | (_) | (__| | (_| | | | |  | |  __/ (_| | | (_| |
+ |_____/ \___/ \___|_|\__,_|_| |_|  |_|\___|\__,_|_|\__,_|
+                                                  
+[3] SOCIAL MEDIA
+============= 
+*/
+
+
+/*
+=============  
+   _____            _             _     ______                   
+  / ____|          | |           | |   |  ____|                  
+ | |     ___  _ __ | |_ __ _  ___| |_  | |__ ___  _ __ _ __ ___  
+ | |    / _ \| '_ \| __/ _` |/ __| __| |  __/ _ \| '__| '_ ` _ \ 
+ | |___| (_) | | | | || (_| | (__| |_  | | | (_) | |  | | | | | |
+  \_____\___/|_| |_|\__\__,_|\___|\__| |_|  \___/|_|  |_| |_| |_|
+                                        
+[4] CONTACT FORM
+============= 
+*/
+
+
+
+/*
+=============  
+  ______          _            
+ |  ____|        | |           
+ | |__ ___   ___ | |_ ___ _ __ 
+ |  __/ _ \ / _ \| __/ _ \ '__|
+ | | | (_) | (_) | ||  __/ |   
+ |_|  \___/ \___/ \__\___|_|   
+                                                 
+[5] FOOTER
+=============  
+*/
+
+.footWrapper{
+	height: 300px;
+	width: 100%; 
+	position: relative;
+}
+
+.footNav, .footLinks{
+	display: inline;
+	float: left;
+	background-color: #271721; /*raisin_black*/
+	font-family: helvetica, sans-serif; 
+}
+
+/* Foot Buttons Colours*/
+.footNav ul li {
+	color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+}	
+
+.footNav ul a {
+	color: #FFFFFF;
+}
+
+.footNav a:link {
+	color:#FFFFFF;
+	text-decoration:none; 
+}
+
+.footNav ul li:hover a:hover {
+	color: #692E45; /*red brown*/
+	background-color: #B29DB3;
+}
+
+/* Footer Terms and Cookies */
+
+
+.footLinks ul a { color: #FFFFFF; }
+
+.footLinks a:link {
+	color:#FFFFFF;
+	text-decoration:none; 
+}
+
+.footLinks ul li {
+	color: #FFFFFF;
+	text-decoration: none;
+	list-style: none;
+}	
+
+.footLinks ul li:hover a:hover {
+	color: #692E45; /*red brown*/
+	background-color: #B29DB3;
+}
+
+
+
+.homeButton{
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-right: 20px;
+	left: 25px;
+}
+
+.socialIcons{
+	display: inline;
+	float: left;
+	margin: 10px;
+}
+
+.copyright{
+	margin-top: 50px;
+	padding-bottom: 20px;
+}
+/*---------
+MEDIA
+
+Video / Audio 
+related styles
+
+---------*/
+
+audio, 
+video {
+ width: 100%;
+}​
+
+.youtubeWrapper{
+	display: block;
+	text-align: center
+}
+
+div.youtubeWrapper iframe {
+	margin: 0 auto;
+	width: 100%;
+	height: 320px;
+}
+
+/*---------
+Header Banner
+---------*/
+
+
+/*---------
+ABOUT banner on HOMEPAGE
+---------*/
+
+
+/*=========================================
+
+ __      _______  _____ _____ _______ 
+ \ \    / /_   _|/ ____|_   _|__   __|
+  \ \  / /  | | | (___   | |    | |   
+   \ \/ /   | |  \___ \  | |    | |   
+    \  /   _| |_ ____) |_| |_   | |   
+     \/   |_____|_____/|_____|  |_|                                                                                                                                                                                                                   
+  _____                 
+ |  __ \                
+ | |__) |_ _  __ _  ___ 
+ |  ___/ _` |/ _` |/ _ \
+ | |  | (_| | (_| |  __/
+ |_|   \__,_|\__, |\___|
+              __/ |     
+             |___/      
+[6] VISIT
+=========================================*/
+
+
+/*=========================================
+
+   _____ ____  _      _      ______ _____ _______ _____ ____  _   _  _____ 
+  / ____/ __ \| |    | |    |  ____/ ____|__   __|_   _/ __ \| \ | |/ ____|
+ | |   | |  | | |    | |    | |__ | |       | |    | || |  | |  \| | (___  
+ | |   | |  | | |    | |    |  __|| |       | |    | || |  | | . ` |\___ \ 
+ | |___| |__| | |____| |____| |___| |____   | |   _| || |__| | |\  |____) |
+  \_____\____/|______|______|______\_____|  |_|  |_____\____/|_| \_|_____/                                     
+  _____                 
+ |  __ \                
+ | |__) |_ _  __ _  ___ 
+ |  ___/ _` |/ _` |/ _ \
+ | |  | (_| | (_| |  __/
+ |_|   \__,_|\__, |\___|
+              __/ |     
+             |___/      
+[7] COLLECTIONS
+
+=========================================*/
+
+
+
+/*=========================================
+  ________   ___    _ _____ ____ _____ _______ _____ ____  _   _  _____ 
+ |  ____\ \ / / |  | |_   _|  _ \_   _|__   __|_   _/ __ \| \ | |/ ____|
+ | |__   \ V /| |__| | | | | |_) || |    | |    | || |  | |  \| | (___  
+ |  __|   > < |  __  | | | |  _ < | |    | |    | || |  | | . ` |\___ \ 
+ | |____ / . \| |  | |_| |_| |_) || |_   | |   _| || |__| | |\  |____) |
+ |______/_/ \_\_|  |_|_____|____/_____|  |_|  |_____\____/|_| \_|_____/ 
+       
+[8] EXHIBITIONS                                                                                                                                                                         
+=========================================*/
+
+
+/*=========================================
+  ______ _____  _    _  _____       _______ _____ ____  _   _ 
+ |  ____|  __ \| |  | |/ ____|   /\|__   __|_   _/ __ \| \ | |
+ | |__  | |  | | |  | | |       /  \  | |    | || |  | |  \| |
+ |  __| | |  | | |  | | |      / /\ \ | |    | || |  | | . ` |
+ | |____| |__| | |__| | |____ / ____ \| |   _| || |__| | |\  |
+ |______|_____/ \____/ \_____/_/    \_\_|  |_____\____/|_| \_|                                                              
+                                                              
+[9] EDUCATION
+[10] EVENTS
+[11] VENUE HIRE
+[12] RESIDENCY
+[13] SUPPORT IMMA                                                                                                                                                                         
+=========================================*/
+
+/*=========================================
+  ________      ________ _   _ _______ _____ 
+ |  ____\ \    / /  ____| \ | |__   __/ ____|
+ | |__   \ \  / /| |__  |  \| |  | | | (___  
+ |  __|   \ \/ / |  __| | . ` |  | |  \___ \ 
+ | |____   \  /  | |____| |\  |  | |  ____) |
+ |______|   \/   |______|_| \_|  |_| |_____/ 
+                                             
+                                                                                                         
+[10] EVENTS
+[11] VENUE HIRE
+[12] RESIDENCY
+[13] SUPPORT IMMA                                                                                                                                                                         
+=========================================*/
+
+
+/*=========================================
+ __      ________ _   _ _    _ ______   _    _ _____ _____  ______ 
+ \ \    / /  ____| \ | | |  | |  ____| | |  | |_   _|  __ \|  ____|
+  \ \  / /| |__  |  \| | |  | | |__    | |__| | | | | |__) | |__   
+   \ \/ / |  __| | . ` | |  | |  __|   |  __  | | | |  _  /|  __|  
+    \  /  | |____| |\  | |__| | |____  | |  | |_| |_| | \ \| |____ 
+     \/   |______|_| \_|\____/|______| |_|  |_|_____|_|  \_\______|
+                                                                                              
+[11] VENUE HIRE
+[12] RESIDENCY
+[13] SUPPORT IMMA                                                                                                                                                                         
+=========================================*/
+
+/*=========================================
+  _____  ______  _____ _____ _____  ______ _   _  _______     __
+ |  __ \|  ____|/ ____|_   _|  __ \|  ____| \ | |/ ____\ \   / /
+ | |__) | |__  | (___   | | | |  | | |__  |  \| | |     \ \_/ / 
+ |  _  /|  __|  \___ \  | | | |  | |  __| | . ` | |      \   /  
+ | | \ \| |____ ____) |_| |_| |__| | |____| |\  | |____   | |   
+ |_|  \_\______|_____/|_____|_____/|______|_| \_|\_____|  |_|   
+                                                                                                                                                     
+[12] RESIDENCY
+[13] SUPPORT IMMA                                                                                                                                                                         
+=========================================*/
+
+
+/*=========================================
+   _____ _    _ _____  _____   ____  _____ _______   _____ __  __ __  __           
+  / ____| |  | |  __ \|  __ \ / __ \|  __ \__   __| |_   _|  \/  |  \/  |   /\     
+ | (___ | |  | | |__) | |__) | |  | | |__) | | |      | | | \  / | \  / |  /  \    
+  \___ \| |  | |  ___/|  ___/| |  | |  _  /  | |      | | | |\/| | |\/| | / /\ \   
+  ____) | |__| | |    | |    | |__| | | \ \  | |     _| |_| |  | | |  | |/ ____ \  
+ |_____/ \____/|_|    |_|     \____/|_|  \_\ |_|    |_____|_|  |_|_|  |_/_/    \_\ 
+                                                                                   
+                                                                                                                                                                                                                                 
+[13] SUPPORT IMMA                                                                                                                                                                         
+=========================================*/
+
+
+
+
+
+/*=========================================
+
+  _    _                      _                   _             
+ | |  | |                    | |                 (_)            
+ | |__| | ___  _   _ ___  ___| | _____  ___ _ __  _ _ __   __ _ 
+ |  __  |/ _ \| | | / __|/ _ \ |/ / _ \/ _ \ '_ \| | '_ \ / _` |
+ | |  | | (_) | |_| \__ \  __/   <  __/  __/ |_) | | | | | (_| |
+ |_|  |_|\___/ \__,_|___/\___|_|\_\___|\___| .__/|_|_| |_|\__, |
+                                           | |             __/ |
+                                           |_|            |___/ 
+                                                 
+
+=========================================*/
+
+/* sections and articles need headers for crawlers and readers */
+.for_seo{ display: none; }
+
+
+
+
+/*=========================================
+
+   _____ ____  _      ____  _    _ _____   _____ 
+  / ____/ __ \| |    / __ \| |  | |  __ \ / ____|
+ | |   | |  | | |   | |  | | |  | | |__) | (___  
+ | |   | |  | | |   | |  | | |  | |  _  / \___ \ 
+ | |___| |__| | |___| |__| | |__| | | \ \ ____) |
+  \_____\____/|______\____/ \____/|_|  \_\_____/ 
+                                                 
+                                                 
+
+=========================================*/
+/*
+-------------------------------------
+(class name) 	(Hex)  		(RGB)
+rythm_blue 		#6D7897		109 120 151
+light_tangelo 	#FFBE6A		255 190 106
+light_gray		#D5D5D5 	213 213 213
+deep_blue   	#333355		51 51 85	
+white_smoke 	#F6F6F6    	246 246 246  
+-------------------------------------
+
+Nav Buttons Colours
+nav ul li {
+	background-color: #6D7897;
+	color: #271721;
+}	
+
+nav ul a {
+	background-color: #6D7897;
+	color: #271721;
+}
+
+nav ul li:hover a:hover {
+	color: #FFBE6A; 
+	background-color: #6D7897;
+}
+
+-------------------------------------
+*/
+
+.rythm_blue{
+	background-color: #6D7897;
+}
+
+.light_tangelo{
+	background-color: #FFBE6A;
+}
+
+.light_gray{
+	background-color: #D5D5D5;
+}
+
+.deep_blue{
+	background-color: #333355;
+}
+
+.white_smoke {
+	background-color: #F6F6F6;
+}
+

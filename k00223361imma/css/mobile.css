@@ -1,0 +1,153 @@
+
+/*=============  
+ __  __          _ _          ___                  _           
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
+ _                   _____    __    __      
+| |__  _   _  /\   /\\_   \/\ \ \/\ \ \/\_/\
+| '_ \| | | | \ \ / / / /\/  \/ /  \/ /\_ _/
+| |_) | |_| |  \ V /\/ /_/ /\  / /\  /  / \ 
+|_.__/ \__, |   \_/\____/\_\ \/\_\ \/   \_/ 
+       |___/                                                     
+
+=============*/				
+
+
+
+
+@media only screen and (max-width : 992px) {
+
+} /* Medium Devices, Desktops */
+
+
+
+/* =============
+  _______    _     _      _   
+ |__   __|  | |   | |    | |  
+    | | __ _| |__ | | ___| |_ 
+    | |/ _` | '_ \| |/ _ \ __|
+    | | (_| | |_) | |  __/ |_ 
+    |_|\__,_|_.__/|_|\___|\__|
+                              
+                              
+=============  */
+/* Ref: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/*/
+/* Ref: http://www.w3schools.com/cssref/css3_pr_mediaquery.asp*/
+
+@media (max-width: 768px){
+	/*-- centres logo on tablet --*/
+	.navbar-header {
+	    float: left;
+	    padding: 15px;
+	    text-align: center;
+	    width: 100%;
+	}
+
+	.navbar-brand {float:none;}
+
+	.navbar-header{
+		height: 80px;
+		padding-top:0px;
+		padding-bottom:0px; 
+	}
+
+	.navWrapper{
+		padding-bottom:10px; 
+	}
+
+	body{
+		padding-top: 100px;
+	}
+
+	nav a{   
+            font-size: 1.5em !important;
+        }
+
+        
+    /* No scrolling for collapsed menu */
+
+	.navbar-collapse.in {
+	    overflow: hidden;
+	    max-height: none !important;
+	    height: auto !important;
+	}
+
+	.navbar-nav li a {
+	 	line-height: 35px;
+	}
+	/*-- logo --*/
+	.brand{
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 20px;
+	}
+	/*-- menu icon --*/
+	.glyphicon {
+	    font-size: 35px;
+	}
+	
+	.hero{
+		margin-top:80px;
+		left:160px;
+	}
+
+} /* Small Devices, Tablets */
+
+
+
+/*===============
+  __  __       _     _ _       
+ |  \/  |     | |   (_) |      
+ | \  / | ___ | |__  _| | ___  
+ | |\/| |/ _ \| '_ \| | |/ _ \ 
+ | |  | | (_) | |_) | | |  __/ 
+ |_|  |_|\___/|_.__/|_|_|\___| 
+                               
+                               
+===============*/
+@media (max-width : 480px){
+
+	.hero{
+		margin-top: 30px;
+		width: 420px;
+		left: 0px;
+	}
+	/*-- centres logo on mobile --*/
+	.navbar-header {
+	    float: left;
+	    padding: 15px;
+	    text-align: center;
+	    width: 100%;
+	}
+
+	.navbar-brand {float:none;}
+
+	.brand{
+		min-width: 80px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20px;
+	}
+
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+    }
+
+	.navbar-header{
+		height: 50px;
+		padding-top:0px;
+		padding-bottom:0px; 
+	}
+
+} /* Extra Small Devices, Phones */ 
+
+
+@media only screen and (max-width : 320px) {
+    
+}/* Custom, iPhone Retina */ 
+
