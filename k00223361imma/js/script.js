@@ -4,9 +4,9 @@ $(document).ready(function($){
 		console.log($scroll);
 
 	  	if ($(document).scrollTop() > 50) {
-	    	$('.navbar-default').addClass('shrink');
+	    	$('.navbar').addClass('shrink');
 	  	} else {
-	    	$('.navbar-default').removeClass('shrink');
+	    	$('.navbar').removeClass('shrink');
 	  	}
 	});
 });

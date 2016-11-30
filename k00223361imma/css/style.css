@@ -184,19 +184,21 @@ layout inherited from BOOTSTRAP
 /*========================== 
 scroll animated shrink style
 ========================== */
+nav .navWrapper{}
 
-nav .navbar{
+nav {
   background-color:#6D7897;
    /* Animation */
    -webkit-transition: all 0.4s ease;
    transition: all 0.4s ease;
 }
 
-nav .navbar.shrink {
-  min-height: 35px;
+nav.navbar-default.shrink {
+  min-height: 100px;
+  font-size: smaller;
 }
-
 /*-- end shrink style--*/
+
 
 nav .nav ul {
 	float:right;
