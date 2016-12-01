@@ -22,6 +22,40 @@ $(document).ready(function($){
 	  	}
 	});
 });
+
+
+
+//=========================================
+// carousel
+//=========================================
+$('.carousel').carousel({
+    		interval: 2000,
+    		wrap: true
+    	});
+
+
+//=========================================
+// modal
+//=========================================
+
+//when modal opens
+$('#contactModal').on('shown.bs.modal', function (e) {
+  $("#pageContent").css({ opacity: 0.5 });
+})
+
+//when modal closes
+$('#contactModal').on('hidden.bs.modal', function (e) {
+  $("#pageContent").css({ opacity: 1 });
+})
+
+
+
+
+
+
+
+
+
 /*
 	//GoogleMaps
 	$('document').ready(initMap);
