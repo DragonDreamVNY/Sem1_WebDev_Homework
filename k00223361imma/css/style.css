@@ -376,6 +376,7 @@ nav .nav ul {
     left: 20px;
 }
 
+
 .wrapContainer{
 	background-color: #D5D5D5;
 	height: auto;
@@ -388,12 +389,41 @@ nav .nav ul {
 ============= 
 */
 
-.bg {
-	background: url('../images/BANNER_HERO.jpg');
-	position: fixed;
-	background-size:cover;
+
+.heroPara {
+	width:500px;
+	margin-left: 30px;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	border: 5px solid #F6F6F6;
 }
 
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(../images/1200x650.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+
+/*.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url()no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}*/
 
 
 
@@ -418,11 +448,13 @@ nav .nav ul {
 .social_logo{
 	display: inline-block;
 	width: 60px;
+
 }
 
 .social_icons{
 	width: 32px;
 }
+
 
 
 
@@ -621,7 +653,10 @@ ABOUT banner on HOMEPAGE
 [8] EXHIBITIONS                                                                                                                                                                         
 =========================================*/
 
-
+.currentExThumbs{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 /*=========================================
   ______ _____  _    _  _____       _______ _____ ____  _   _ 
  |  ____|  __ \| |  | |/ ____|   /\|__   __|_   _/ __ \| \ | |
@@ -644,10 +679,10 @@ ABOUT banner on HOMEPAGE
                                                                                                          
 [10] EVENTS                                                                                                                                                                       
 =========================================*/
-#canvas {
+#canvas1 {
 max-width: 100%;
 height: auto;
-background: url("images/stan_douglas_gallery_web495_IMMA.jpg") no-repeat;
+background: url("../images/stan_douglas_gallery_web495_IMMA.jpg") no-repeat;
 background-size: 100%;
 }
 

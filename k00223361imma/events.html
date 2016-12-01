@@ -81,13 +81,25 @@
 	    	</div><!-- end NavWrapper-->
 		</nav>
 
-		
-		<div class="hero light_tangelo_txt">
+		<!---============================
+					PARALLAX
+		============================-->
+		<div class="content-space-one">
+                <div class="text-center light_tangelo_txt ">
+            <h2 class="heroPara white_smoke_txt">EVENTS : IRISH MUSEUM OF MODERN ART</h2>
+                    <div class="page-break"></div>
+                <p></p>
+                </div>
+        </div>
+		<!---============================
+					end PARALLAX
+		============================-->
+		<!-- <div class="hero light_tangelo_txt">
 			<p>EVENTS : IRISH MUSEUM OF MODERN ART</p>
 		</div>
 		<div class="row">
 				<img src="images/BANNER_HERO.jpg" alt="banner image of IMMA homepage" class='img-responsive'>
-		</div>
+		</div> -->
 
 		
 		<article class="col-md-6">
@@ -129,12 +141,11 @@ The IMMA Collection has secured a significant five-year loan of 50 works by one 
 					
 	<div class="col-md-12">
 	<h2> Find them in the Canvas </h2>
-	<canvas id="canvas"></canvas>
-
+	<canvas id="canvas1"></canvas>
 
 		<script type="text/javascript">		
 			var canvas = oCanvas.create({
-			canvas: "#canvas",
+			canvas: "#canvas1",
 			fps: 60
 			});
 
@@ -156,7 +167,7 @@ The IMMA Collection has secured a significant five-year loan of 50 works by one 
 			canvas.addChild(image);
 			};
 
-			img.src = "iamges/stan_douglas_gallery_web495_IMMA.jpg";
+			img.src = "images/stan_douglas_gallery_web495_IMMA.jpg";
 
 			var ellipse = canvas.display.ellipse({
 			x: 10,

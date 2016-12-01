@@ -83,6 +83,9 @@
 
 	.navbar-nav li a {
 	 	line-height: 35px;
+	 	margin-right: 0;
+		float: none;
+
 	}
 	/*-- logo --*/
 	.brand{
@@ -95,10 +98,24 @@
 	    font-size: 35px;
 	}
 	
-	.hero{
+	/*.hero{
 		margin-top:80px;
 		left:160px;
+	}*/
+
+	.heroPara {
+	width:400px;
+	margin-left: 30px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+	.content-space-one {
+	  padding: 0px;
+	  margin-bottom: 0px;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
 	}
+
 
 	.footerList{
 		text-align: center;
@@ -123,11 +140,25 @@
 	.navWrapper{
 		height: 100px;
 	}
-	.hero{
+	/*.hero{
 		margin-top: 35px;
 		width: 450px;
 		left: 0px;
+	}*/
+
+	.heroPara {
+	width:300px;
+	margin-left: 0px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+	.content-space-one {
+	  margin-bottom: 0px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
 	}
+
+
 	/*-- centres logo on mobile --*/
 	.navbar-header {
 	    float: left;

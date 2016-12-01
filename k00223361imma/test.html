@@ -3,53 +3,163 @@
 <head>
 	<title>testing shit</title>
 
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNBDQLLTasUkMn73TFBmWVRN-hY4vxgMs" async defer></script>
+<meta charset="utf-8"/>
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>IMMA | Irish Museum of Modern Art</title>
+	<!--Google webfont-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<script type="text/javascript">
-	function initialize() {
-	    var latlng = new google.maps.LatLng(-34.397, 150.644);
-	    var mapOptions = {
-	        center: latlng,
-	        zoom: 12,  
-	        mapTypeId: google.maps.MapTypeId.ROADMAP
-	    };
-	    var map = new google.maps.Map(document.getElementById("map_canvas"),
-	    	mapOptions);
-	}
-	</script> -->
+    <!--main styles-->
+    <link href="css/style.css" rel="stylesheet">
+    <!--mobile styles-->
+    <link href="css/mobile.css" rel="stylesheet">
+<style type="text/css"> 
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(images/1200x650.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 
+
+.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(§no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+</style>
 </head>
-<body > <!-- onload="initialize()" -->
-	<!-- <div id="map_canvas" style="height: 100%; width:100%"></div> -->
+<body > <div class="wrapContainer">
+		<h1 class ="for_seo">IMMA</h1>
 
-	<!-- <div class="container">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.0187707870446!2d-6.302236684572956!3d53.342920182669594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c462efd7fcd%3A0x3dc9b365e0e6ace!2sIrish+Museum+of+Modern+Art!5e0!3m2!1sen!2sie!4v1480527335558"  height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div> -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation nav-custom">
+			<div class="container navWrapper">
+				<!-- SVG Logo -->
+				<div class="navbar-header"> 
+						<a class="navbar-brand" href="index.html">
+						<img class="brand col-md-offset-3" src="images/imma-logo-white-01.svg" alt="IMMA logo"></a>
+					<h2 class="for_seo">The Irish Museum of Modern Art</h2>	
+				</div>
+				<!-- end Logo-->
+				<div class="text-center">
+			  		<button type="button"
+			  			class="navbar-toggle collapsed"
+			  			data-toggle ="collapse" 
+			  			data-target="#collapsemenu"
+			  			aria-expanded="false">
+			  				
+						<span class="sr-only">Toggle Navigation</span>
+						<span class="glyphicon glyphicon-align-justify white_smoke_txt"></span>
+	        			<span class="navmenu"></span>
+		  			</button>
+	  			</div>
 
-<!--contact form-->
-				 	<form id='formControlsL' autocomplete='on'>
-			            <div class='form-group'>  
-		              		<label for='name'>Name:</label>
-		             	 	<input type='text' name='name' class='form-control' id='nameKey' placeholder='Firstname Surname' required autofocus pattern='[a-zA-Z0-9]+'><br>
-			            </div>  
-			            <div class='form-group'>  
-		              		<label for='email'>Email Address:</label> 
-		              		<input type='email' name='email' class='form-control' id='userEmail' placeholder='your-email@address.com' required><br>
-			            </div>  
-			            <div class='form-group'>
-		              		<label for='telephone'>Telephone:</label>
-		              		<input type='tel' name='telephone' class='form-control' id='phone' pattern='[\+]\d{3}[\-]\d{2}[\-]\d{7}' placeholder='+353-87-123-4567'> <br>
-			            </div>
-			            <div class="form-group">
-							<label for="comment">Comment:</label>
-							<textarea class="form-control" rows="5" id="yourMessage"></textarea>
-						</div>
+				<!-- Collect content for toggling -->
+		    	<div class="collapse navbar-collapse" id="collapsemenu">
+		    		
+						<ul class = 'nav navbar-nav navbar-fnt nav-center pull-right'>
+							<li><a href="visit.html">VISIT</a></li>
+							<li><a href="collections.html">COLLECTIONS</a></li>
+							<li><a href="exhibitions.html">EXHIBITIONS</a></li>
+							<li><a href="education.html">EDUCATION</a></li>
+						</ul>
+						<div class="row"></div><!--clear!-->
+				    	<ul class = 'nav navbar-nav navbar-fnt nav-center pull-right'>
+							<li id ="activePage"><a href="#">EVENTS</a></li>
+							<li><a href="venue.html">VENUE HIRE</a></li>
+							<li><a href="residency.html">RESIDENCY</a></li>
+							<li><a href="support.html">SUPPORT IMMA</a></li>
+						</ul>
+					
+		    	</div> <!-- end collapse-->
+	    	</div><!-- end NavWrapper-->
+		</nav>
 
-		            </form>
-			            <button type='submitMessage' id='formButton' class='btn btn-primary' form='formControlsL' >SEND</button> 
-						<!--end contact form-->
+		<div class="content-space-one">
+                <div class="text-center light_tangelo_txt ">
+            <h2 class="heroParallax white_smoke_txt">EVENTS : IRISH MUSEUM OF MODERN ART</h2>
+                    <div class="page-break"></div>
+                <p></p>
+                </div>
+        </div>
 
+
+		<!-- <div class="hero light_tangelo_txt">
+			<p>EVENTS : IRISH MUSEUM OF MODERN ART</p>
+		</div> -->
+		<!-- <div class="row">
+				<img src="images/BANNER_HERO.jpg" alt="banner image of IMMA homepage" class='img-responsive'>
+		</div>
+ -->
+		
+		<article class="col-md-6">
+			<div class="bound_box">
+				<h2 class="h2_centre rhythm_blue white_smoke_txt">TALKS &amp; EVENTS</h2>
+				<div class="text_col">
+					<h4>Artist Talk: Emily Jacir Europa
+					<br>Thur 24 Nov, 6-7pm, Lecture Room </h3>
+					<p>Emily Jacir has built a complex and compelling oeuvre through a diverse range of media and methodologies that include unearthing historic material, performative gestures and in-depth research. Through an inquiry into processes of translation, the archive, resistance and movement, Jacir’s highly influential work asks us to consider what it means to be a political artist. Book now</p>
+
+					<h4>International Symposium
+					<br>The Artist &amp; The State
+					<br>Sat 26 Nov, 10am-5.30pm, The Chapel, €6</h3>
+					<p>In response to the centenary of the 1916 Rising and the evolution of society over the past 100 years, IMMA, The Hugh Lane and Create’s  2016 programmes reflected on the role …</p>
+				</div>
+			</div>
+		</article><!--end col 1-->
+
+
+
+
+
+
+
+<!--  <div class="content-block-one">
+            <h1>This is a content block</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div> -->
+            
+
+<!-- <div class="content-block-one">
+            <h1>This is a content block</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+
+<div class="content-space-two">
+	<div class="text-center">
+		<h1>This separates content!</h1>
+		<div class="page-break"></div>
+		<p>Other information can go here</p>
+	</div>
+</div> -->
 	
-<script src="js/local.js"></script>
+<!-- <script src="js/local.js"></script> -->
 </body>
 </html>
