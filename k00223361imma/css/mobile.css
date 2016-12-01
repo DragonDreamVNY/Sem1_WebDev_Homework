@@ -43,14 +43,15 @@
 	    padding: 15px;
 	    text-align: center;
 	    width: 100%;
+	    height: 80px;
+		padding-top:0px;
+		padding-bottom:0px; 
 	}
 
 	.navbar-brand {float:none;}
 
-	.navbar-header{
-		height: 80px;
-		padding-top:0px;
-		padding-bottom:0px; 
+	.navbar{
+		height:150px;
 	}
 
 	.navWrapper{
@@ -64,7 +65,7 @@
 	nav a{   
             font-size: 1.5em !important;
         }
-
+	
         
     /* No scrolling for collapsed menu */
 
@@ -93,6 +94,10 @@
 		left:160px;
 	}
 
+	.footerList{
+		text-align: center;
+	}
+
 } /* Small Devices, Tablets */
 
 
@@ -108,10 +113,12 @@
                                
 ===============*/
 @media (max-width : 480px){
-
+	.navWrapper{
+		height: 100px;
+	}
 	.hero{
-		margin-top: 30px;
-		width: 420px;
+		margin-top: 35px;
+		width: 450px;
 		left: 0px;
 	}
 	/*-- centres logo on mobile --*/
@@ -120,17 +127,38 @@
 	    padding: 15px;
 	    text-align: center;
 	    width: 100%;
+	    height: 50px; /*pushes Toggle button down*/
+		padding-top:0px;
+		padding-bottom:0px;
 	}
 
 	.navbar-brand {float:none;}
 
 	.brand{
-		min-width: 80px;
+		width: 100px;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		padding-left: 20px;
 	}
 
+	.navbar-toggle{
+		margin-top: : 20px;
+		margin-bottom: : 10px;
+	}
+	/*-- shrink style on sm --*/
+	.brand.shrink{
+		width: 95px;
+	}
+
+	/*.navWrapper.shrink{
+		height: 50px;
+	}*/
+	/*-- end shrink style--*/
+	
+	/*blue box with Logo and Toggle Button*/
+	.navbar{
+		height:110px;
+	}
 	.navbar .navbar-nav {
 		display: inline-block;
 		float: none;
@@ -138,16 +166,27 @@
 		margin-right: auto;
     }
 
-	.navbar-header{
-		height: 50px;
-		padding-top:0px;
-		padding-bottom:0px; 
+
+	.footerList{
+		text-align: center;
 	}
 
 } /* Extra Small Devices, Phones */ 
 
 
 @media only screen and (max-width : 320px) {
-    
+    .hero{
+		margin-top: 10px;
+		width: 420px;
+		left: 0px;
+	}
+	
 }/* Custom, iPhone Retina */ 
 
+
+@media screen, print
+{
+p.bodyText {
+	font-family:verdana, arial, sans-serif;
+	font-size:10pt}
+}/* Print version */ 
