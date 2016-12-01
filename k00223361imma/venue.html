@@ -72,7 +72,7 @@
 						<div class="row"></div><!--clear!-->
 				    	<ul class = 'nav navbar-nav navbar-fnt nav-center pull-right'>
 							<li><a href="events.html">EVENTS</a></li>
-							<li><a href="#">VENUE HIRE</a></li>
+							<li id="activePage"><a href="#">VENUE HIRE</a></li>
 							<li><a href="residency.html">RESIDENCY</a></li>
 							<li><a href="support.html">SUPPORT IMMA</a></li>
 						</ul>
@@ -82,8 +82,8 @@
 		</nav>
 
 		
-		<div class="hero white_smoke_txt">
-			<p>IRISH MUSEUM OF MODERN ART</p>
+		<div class="hero light_tangelo_txt">
+			<p>VENUE : IRISH MUSEUM OF MODERN ART</p>
 		</div>
 		<div class="row">
 				<img src="images/BANNER_HERO.jpg" alt="banner image of IMMA homepage" class='img-responsive'>
@@ -152,6 +152,8 @@
 		
 		<div class="row"></div>
 		
+		<div class="row"></div>
+		
 		<section class="container socialWrap"> <!--social media-->
 			<div class="margin-centre text-center">
 				<img class="social_logo" src="images/imma-logo-white-01.svg" alt ="imma logo, please connect with us on social media">
@@ -165,6 +167,59 @@
 				<li><a href="https://soundcloud.com/imma-ireland"><img class="social_icons" src="images/Soundcloud-color.svg" alt="Sound cloud profile"></a></li>
 			</ul>
 			</div>
+
+		<!-- ==================
+					Modal 
+			==================-->
+ 		<div class="container text-center modalWrap"> 
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#contactModal">CONTACT IMMA</button>
+
+			<div id="contactModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+	      			<div class="modal-header">
+		        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        	<h4 class="modal-title">Contact IMMA</h4>
+	     	 		</div> <!--end modal header-->
+		      		<div class="modal-body">
+
+			        	<!--contact form-->
+				 	<!--contact form-->
+				 	<form id='formControlsL' autocomplete='on'>
+			            <div class='form-group'>  
+		              		<label for='name'>Name:</label>
+		             	 	<input type='text' name='name' class='form-control' id='nameKey' placeholder='Firstname Surname' required autofocus pattern='[a-zA-Z0-9]+'><br>
+			            </div>  
+			            <div class='form-group'>  
+		              		<label for='email'>Email Address:</label> 
+		              		<input type='email' name='email' class='form-control' id='userEmail' placeholder='your-email@address.com' required><br>
+			            </div>  
+			            <div class='form-group'>
+		              		<label for='telephone'>Telephone:</label>
+		              		<input type='tel' name='telephone' class='form-control' id='phone' pattern='[\+]\d{3}[\-]\d{2}[\-]\d{7}' placeholder='+353-87-123-4567'> <br>
+			            </div>
+			            <div class="form-group">
+							<label for="comment">Comment:</label>
+							<textarea class="form-control" rows="5" id="yourMessage"></textarea>
+						</div>
+
+		            </form>
+			            <button type='submitMessage' id='formButton' class='btn btn-primary' form='formControlsL' >SEND</button> 
+						<!--end contact form-->
+
+			      	</div> <!--end modal body-->
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      	</div>
+			    </div>
+
+
+			  </div> <!--end dialog-->
+			</div><!--end modal-->
+		</div>
 		</section> <!--end social, be introvert-->
 
 		<div class="row"></div>	
@@ -182,19 +237,19 @@
 				</ul>
 			</div><!--end footercol 1-->
 
-			<div class="col-md-3  col-sm-3 footerNav">
+			<div class="col-md-3 col-sm-3 footerNav">
 				<ul class="footerList"> 
 					<li><a href="#">Press</a></li>
 					<li><a href="#">Corporate Events</a></li>
-					<li><a href="#">Venue Hire</a></li>
+					<li><a href="venue.html">Venue Hire</a></li>
 					<li><a href="residency.html">Residency</a></li>
 					<li><a href="support.html">Support IMMA</a></li>
 				</ul>
 			</div><!--end footercol 2-->
 
-			<div class="col-md-3  col-sm-3 footerNav">
+			<div class="col-md-3 col-sm-3 footerNav">
 				<ul class="footerList"> 
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#contactModal">CONTACT</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Cookies Policy</a></li>
 					<li><a href="#">Privacy Policy</a></li>
@@ -206,10 +261,12 @@
 				</ul>
 			</div><!--end footercol 3-->
 			<div class="row"></div>
+
 			<!--Credits Thats All FOLKS-->
-			<div class="margin-centre text-center col-md-8 col-sm-4 copyright">
+			<div class="margin-centre text-center col-md-8 col-sm-4 copyright footLinks">
 				<p class="white_smoke_txt">Irish Museum of Modern Art, Royal Hospital, Kilmainham, Dublin 8, D08 FW31, Ireland <br>
-				Tel: +353-1-6129900 &emsp; Email: info@imma.ie
+				<a class ="white_smoke_txt" href="tel:01-612-9900">Tel: +353-1-6129900</a> &emsp; 
+				<a class ="white_smoke_txt" href="mailto:info@imma.ie">Email: info@imma.ie</a>
 				</p>
 				<p class="white_smoke_txt">© IMMA &amp;  Vincent Lee 2016 &emsp;<br>ALL RIGHTS RESERVED </p>
 			</div>
@@ -217,21 +274,26 @@
 	</div><!--end gray WrapContainer-->
 
 
-
 	<!--try to use CDN first for minified JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- fallback if in Mother China -->
 	<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js">\x3C/script>') </script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<!--try to use CDN first for BootStrap-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script>$.fn.modal || document.write('<script src="Script/bootstrap.min.js">\x3C/script>')</script>
+	
 	<!--if CDN file isn't delivered, send a local file-->
+	<script>$.fn.modal || document.write('<script src="Script/bootstrap.min.js">\x3C/script>')</script>
+	
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+	<script type="text/javascript">
+	window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"","link":null,"theme":"dark-floating"};
+	</script>
 
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<!-- End Cookie Consent plugin -->
 
-
+	<script src="js/local.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

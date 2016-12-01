@@ -85,10 +85,10 @@
 		<div class="hero white_smoke_txt">
 			<p>IRISH MUSEUM OF MODERN ART</p>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 				<img src="images/BANNER_HERO.jpg" alt="banner image of IMMA homepage" class='img-responsive'>
 		</div>
-
+ -->
 
 		<div id="locations" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
@@ -119,12 +119,6 @@
 				</div>
 
 
-
-
-
-
-
-		
 		<article class="col-md-4">
 			<div class="bound_box">
 				<h2 class="h2_centre rhythm_blue white_smoke_txt">TALKS &amp; EVENTS</h2>
@@ -205,7 +199,7 @@
 		<!-- ==================
 					Modal 
 			==================-->
- 		<div class="container"> 
+ 		<div class="container text-center modalWrap"> 
 			<!-- Trigger the modal with a button -->
 			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#contactModal">CONTACT IMMA</button>
 
@@ -221,10 +215,11 @@
 		      		<div class="modal-body">
 
 			        	<!--contact form-->
+				 	<!--contact form-->
 				 	<form id='formControlsL' autocomplete='on'>
 			            <div class='form-group'>  
 		              		<label for='name'>Name:</label>
-		             	 	<input type='text' name='name' class='form-control' id='name' placeholder='Firstname Surname' required autofocus pattern='[a-zA-Z0-9]+'><br>
+		             	 	<input type='text' name='name' class='form-control' id='nameKey' placeholder='Firstname Surname' required autofocus pattern='[a-zA-Z0-9]+'><br>
 			            </div>  
 			            <div class='form-group'>  
 		              		<label for='email'>Email Address:</label> 
@@ -240,7 +235,7 @@
 						</div>
 
 		            </form>
-			            <button type='submit' class='btn btn-primary' form='formControlsL'>SEND</button> 
+			            <button type='submitMessage' id='formButton' class='btn btn-primary' form='formControlsL' >SEND</button> 
 						<!--end contact form-->
 
 			      	</div> <!--end modal body-->
@@ -282,7 +277,7 @@
 
 			<div class="col-md-3 col-sm-3 footerNav">
 				<ul class="footerList"> 
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#contactModal">CONTACT</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Cookies Policy</a></li>
 					<li><a href="#">Privacy Policy</a></li>
@@ -326,7 +321,7 @@
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
 	<!-- End Cookie Consent plugin -->
 
-
+	<script src="js/local.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

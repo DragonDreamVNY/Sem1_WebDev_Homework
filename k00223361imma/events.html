@@ -71,7 +71,7 @@
 						</ul>
 						<div class="row"></div><!--clear!-->
 				    	<ul class = 'nav navbar-nav navbar-fnt nav-center pull-right'>
-							<li><a href="#">EVENTS</a></li>
+							<li id ="activePage"><a href="#">EVENTS</a></li>
 							<li><a href="venue.html">VENUE HIRE</a></li>
 							<li><a href="residency.html">RESIDENCY</a></li>
 							<li><a href="support.html">SUPPORT IMMA</a></li>
@@ -82,15 +82,15 @@
 		</nav>
 
 		
-		<div class="hero white_smoke_txt">
-			<p>IRISH MUSEUM OF MODERN ART</p>
+		<div class="hero light_tangelo_txt">
+			<p>EVENTS : IRISH MUSEUM OF MODERN ART</p>
 		</div>
 		<div class="row">
 				<img src="images/BANNER_HERO.jpg" alt="banner image of IMMA homepage" class='img-responsive'>
 		</div>
 
 		
-		<article class="col-md-4">
+		<article class="col-md-6">
 			<div class="bound_box">
 				<h2 class="h2_centre rhythm_blue white_smoke_txt">TALKS &amp; EVENTS</h2>
 				<div class="text_col">
@@ -106,49 +106,80 @@
 			</div>
 		</article><!--end col 1-->
 
-		<article class="col-md-4">
+		<article class="col-md-6">
 			<div class ="bound_box">
 				<h2 class="h2_centre rhythm_blue white_smoke_txt">EXHIBITS</h2>
 					<div class="text_col">
-						<p><a href="#">IMMA Collection: Freud Project</a>
-						<br>(Booking advised. BOOK HERE)</p>
+						<p>28 Apr - 08 Jan 2017	<br>IMMA Collection: A Decade 
+IMMA, as the national cultural institution for collecting modern and contemporary art, aims to acquire examples of the most significant Irish art of the day as well as key works by international artists many of whom have been part of the museum’s temporary exhibition and residency programmes. ...</p>
 
-						<p><a href="#">Duncan Campbell, The Welfare of Tomás Ó Hallissy</a>
-						<br>(Until 7 May 2017) </p>
+<p>15 Jul - 26 Feb 2017	<br>The Hennessy Art Fund for IMMA Collection 
+The Hennessy Art Fund for IMMA Collection supports the acquisition of works by artists not yet represented by the IMMA Collection of Contemporary and Modern Art. The Hennessy Art Fund exhibition showcases the four Irish based artists whose work will now join IMMA’s Collection, funded by Hennessy Ireland. The chosen artists for 2016, the first year of the fund, are Kevin Atherton, David Beattie, Rhona Byrne and Dennis McNulty. ...</p>
 
-						<p><a href="#">Emily Jacir Europa</a> 
-						<br>(Until 26 February 2017)
-
-						<p><a href="#">Jaki Irvine, If the Ground Should Open…</a>
-						<br>(Until 15 Jan 2017)</p> 
-
-						<p><a href="#">The Plough and other stars: Invited Curator Kate Strain</a>
-						<br>(Until 26 Feb 2017)</p>
-
-						<p><a href="#">Historica - Republican Aesthetics: Invited Curator Sumesh Sharma</a>
-						<br>(Until 26 Feb 2017)</p>
+<p>20 Oct - 21 Oct 2017	<br>IMMA Collection: Freud Project, 2016 – 2021 
+The IMMA Collection has secured a significant five-year loan of 50 works by one of the greatest realist painters of the 20th century, Lucian Freud (1922-2011). The works, on loan from private collections, will be presented in a series of exhibitions in a dedicated Freud Centre in IMMA’s Garden Galleries for five years, 2016 - 2021. All 50 works will be shown during the first year. ...</p>
 					</div>
 			</div>
 		</article><!--end col 2-->
-
-		<article class="col-md-4">
+<div class="row"></div>
+		<article class="col-md-12">
 			<div class="bound_box">
 				<h2 class="h2_centre rhythm_blue white_smoke_txt">CALENDAR 2016</h2>
 				<h3>2016 HIGHLIGHTS</h3>
 					
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/smEWvHHIwLc"allowfullscreen></iframe>
-				</div>
-
-				<p><a href="#">Watch IMMA Director Sarah Glennie &amp; commissioned artists Duncan Campbell &amp;Jaki Irvine talk about the 2016 Programme at IMMA.</a></p>
+	<div class="col-md-12">
+	<h2> Find them in the Canvas </h2>
+	<canvas id="canvas"></canvas>
 
 
-				<p><a href="#">Download</a> our new Events Calendar for Sept 2016 to Jan 2017</p>
+		<script type="text/javascript">		
+			var canvas = oCanvas.create({
+			canvas: "#canvas",
+			fps: 60
+			});
 
-				<p><a href="#">Book your ticket</a> for IMMA Collection: Freud Project</p>
-			</div>
-		</article><!--end col 3-->
+			var img = new Image()
 
+			img.onload = function(){
+			var image = canvas.display.image({
+			x: 0,
+			y: 0,
+			width: img.naturalWidth,
+			height: img.naturalHeight,
+			origin: { x: 0, y: 0 },
+			image: img.src
+			});
+
+			canvas.width = img.naturalWidth;
+			canvas.height = img.naturalHeight;
+
+			canvas.addChild(image);
+			};
+
+			img.src = "iamges/stan_douglas_gallery_web495_IMMA.jpg";
+
+			var ellipse = canvas.display.ellipse({
+			x: 10,
+			y: 10,
+			radius: 70,
+			fill: "#0aa",
+			composition:"destination-atop"
+			});
+
+			canvas.addChild(ellipse);
+
+			canvas.setLoop(function () {
+
+			ellipse.zIndex = 'front';
+			ellipse.x = canvas.mouse.x;
+			ellipse.y = canvas.mouse.y;
+
+			}).start();
+		</script>
+	</div><!--end canvas-->
+
+		
+		
 		
 		<div class="row"></div>
 		
@@ -165,6 +196,59 @@
 				<li><a href="https://soundcloud.com/imma-ireland"><img class="social_icons" src="images/Soundcloud-color.svg" alt="Sound cloud profile"></a></li>
 			</ul>
 			</div>
+
+		<!-- ==================
+					Modal 
+			==================-->
+ 		<div class="container text-center modalWrap"> 
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#contactModal">CONTACT IMMA</button>
+
+			<div id="contactModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+	      			<div class="modal-header">
+		        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        	<h4 class="modal-title">Contact IMMA</h4>
+	     	 		</div> <!--end modal header-->
+		      		<div class="modal-body">
+
+			        	<!--contact form-->
+				 	<!--contact form-->
+				 	<form id='formControlsL' autocomplete='on'>
+			            <div class='form-group'>  
+		              		<label for='name'>Name:</label>
+		             	 	<input type='text' name='name' class='form-control' id='nameKey' placeholder='Firstname Surname' required autofocus pattern='[a-zA-Z0-9]+'><br>
+			            </div>  
+			            <div class='form-group'>  
+		              		<label for='email'>Email Address:</label> 
+		              		<input type='email' name='email' class='form-control' id='userEmail' placeholder='your-email@address.com' required><br>
+			            </div>  
+			            <div class='form-group'>
+		              		<label for='telephone'>Telephone:</label>
+		              		<input type='tel' name='telephone' class='form-control' id='phone' pattern='[\+]\d{3}[\-]\d{2}[\-]\d{7}' placeholder='+353-87-123-4567'> <br>
+			            </div>
+			            <div class="form-group">
+							<label for="comment">Comment:</label>
+							<textarea class="form-control" rows="5" id="yourMessage"></textarea>
+						</div>
+
+		            </form>
+			            <button type='submitMessage' id='formButton' class='btn btn-primary' form='formControlsL' >SEND</button> 
+						<!--end contact form-->
+
+			      	</div> <!--end modal body-->
+			      	<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      	</div>
+			    </div>
+
+
+			  </div> <!--end dialog-->
+			</div><!--end modal-->
+		</div>
 		</section> <!--end social, be introvert-->
 
 		<div class="row"></div>	
@@ -175,14 +259,14 @@
 					<li><a href="#">Opening Hours</a></li>
 					<li><a href="collections.html">Collections</a></li>
 					<li><a href="exhibitions.html">Exhibitions</a></li>
-					<li><a href="#">Events Calendar</a></li>
+					<li><a href="events.html">Events Calendar</a></li>
 					<li><a href="education.html">Education</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Jobs</a></li>
 				</ul>
 			</div><!--end footercol 1-->
 
-			<div class="col-md-3  col-sm-3 footerNav">
+			<div class="col-md-3 col-sm-3 footerNav">
 				<ul class="footerList"> 
 					<li><a href="#">Press</a></li>
 					<li><a href="#">Corporate Events</a></li>
@@ -192,9 +276,9 @@
 				</ul>
 			</div><!--end footercol 2-->
 
-			<div class="col-md-3  col-sm-3 footerNav">
+			<div class="col-md-3 col-sm-3 footerNav">
 				<ul class="footerList"> 
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#contactModal">CONTACT</a></li>
 					<li><a href="#">FAQ</a></li>
 					<li><a href="#">Cookies Policy</a></li>
 					<li><a href="#">Privacy Policy</a></li>
@@ -206,10 +290,12 @@
 				</ul>
 			</div><!--end footercol 3-->
 			<div class="row"></div>
+
 			<!--Credits Thats All FOLKS-->
-			<div class="margin-centre text-center col-md-8 col-sm-4 copyright">
+			<div class="margin-centre text-center col-md-8 col-sm-4 copyright footLinks">
 				<p class="white_smoke_txt">Irish Museum of Modern Art, Royal Hospital, Kilmainham, Dublin 8, D08 FW31, Ireland <br>
-				Tel: +353-1-6129900 &emsp; Email: info@imma.ie
+				<a class ="white_smoke_txt" href="tel:01-612-9900">Tel: +353-1-6129900</a> &emsp; 
+				<a class ="white_smoke_txt" href="mailto:info@imma.ie">Email: info@imma.ie</a>
 				</p>
 				<p class="white_smoke_txt">© IMMA &amp;  Vincent Lee 2016 &emsp;<br>ALL RIGHTS RESERVED </p>
 			</div>
@@ -217,21 +303,26 @@
 	</div><!--end gray WrapContainer-->
 
 
-
 	<!--try to use CDN first for minified JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- fallback if in Mother China -->
 	<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js">\x3C/script>') </script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<!--try to use CDN first for BootStrap-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script>$.fn.modal || document.write('<script src="Script/bootstrap.min.js">\x3C/script>')</script>
+	
 	<!--if CDN file isn't delivered, send a local file-->
+	<script>$.fn.modal || document.write('<script src="Script/bootstrap.min.js">\x3C/script>')</script>
+	
+	<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+	<script type="text/javascript">
+	window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"","link":null,"theme":"dark-floating"};
+	</script>
 
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+	<!-- End Cookie Consent plugin -->
 
-
+	<script src="js/local.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -245,8 +245,8 @@ nav.navbar-default.shrink {
 		padding: 0;
 	}
 
-.navItems a.shrink{
-	padding: 5px;
+/*.navItems a.shrink{
+	padd*/ing: 5px;
 }
 
 .brand.shrink{
@@ -439,6 +439,9 @@ nav .nav ul {
 ============= 
 */
 
+.modalWrap{
+	margin-top: 20px;
+}
 
 
 /*
@@ -580,6 +583,10 @@ ABOUT banner on HOMEPAGE
     height: 100%;
 } /*Google Maps container*/
 
+#activePage, #activePage a {
+	color:  #FFBE6A !important;
+}
+
 
 /*=========================================
 
@@ -623,11 +630,7 @@ ABOUT banner on HOMEPAGE
  | |____| |__| | |__| | |____ / ____ \| |   _| || |__| | |\  |
  |______|_____/ \____/ \_____/_/    \_\_|  |_____\____/|_| \_|                                                              
                                                               
-[9] EDUCATION
-[10] EVENTS
-[11] VENUE HIRE
-[12] RESIDENCY
-[13] SUPPORT IMMA                                                                                                                                                                         
+[9] EDUCATION                                                                                                                                                                       
 =========================================*/
 
 /*=========================================
@@ -639,12 +642,14 @@ ABOUT banner on HOMEPAGE
  |______|   \/   |______|_| \_|  |_| |_____/ 
                                              
                                                                                                          
-[10] EVENTS
-[11] VENUE HIRE
-[12] RESIDENCY
-[13] SUPPORT IMMA                                                                                                                                                                         
+[10] EVENTS                                                                                                                                                                       
 =========================================*/
-
+#canvas {
+max-width: 100%;
+height: auto;
+background: url("images/stan_douglas_gallery_web495_IMMA.jpg") no-repeat;
+background-size: 100%;
+}
 
 /*=========================================
  __      ________ _   _ _    _ ______   _    _ _____ _____  ______ 
@@ -654,9 +659,7 @@ ABOUT banner on HOMEPAGE
     \  /  | |____| |\  | |__| | |____  | |  | |_| |_| | \ \| |____ 
      \/   |______|_| \_|\____/|______| |_|  |_|_____|_|  \_\______|
                                                                                               
-[11] VENUE HIRE
-[12] RESIDENCY
-[13] SUPPORT IMMA                                                                                                                                                                         
+[11] VENUE HIRE                                                                                                                                                                    
 =========================================*/
 
 /*=========================================
@@ -667,8 +670,7 @@ ABOUT banner on HOMEPAGE
  | | \ \| |____ ____) |_| |_| |__| | |____| |\  | |____   | |   
  |_|  \_\______|_____/|_____|_____/|______|_| \_|\_____|  |_|   
                                                                                                                                                      
-[12] RESIDENCY
-[13] SUPPORT IMMA                                                                                                                                                                         
+[12] RESIDENCY                                                                                                                                                                        
 =========================================*/
 
 
