@@ -64,7 +64,13 @@
 
 	nav a{   
             font-size: 1.5em !important;
-        }
+     }
+	h4{
+		font-style: TruenoBd, Open Sans, sans-serif;
+	}
+     .text_col{
+     	font-size: 1.33em;
+     }
 	
         
     /* No scrolling for collapsed menu */
@@ -96,6 +102,7 @@
 
 	.footerList{
 		text-align: center;
+		font-size: 1.33em;
 	}
 
 } /* Small Devices, Tablets */

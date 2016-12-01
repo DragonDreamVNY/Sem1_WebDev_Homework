@@ -28,6 +28,7 @@ TABLE OF CONTENTS
 [2] NAV MENU
 [2.1] HOMEPAGE
 [2.2] PARALLAX
+[2.3] SCROLL SHRINK
 [3] SOCIAL MEDIA
 [4] CONTACT FORM
 [5] FOOTER
@@ -125,7 +126,7 @@ h3 {
 /* Column headers*/
 .h2_centre{
 	font-style: TruenoBd, Open Sans, sans-serif;
-	color: #F6F6F6 !important;
+	color: #F6F6F6;
 	font-size: 1.5em;
 	margin: 5px;
 	padding: 5px;
@@ -218,7 +219,7 @@ layout inherited from BOOTSTRAP
 
 
 /*========================== 
-scroll animated shrink style
+[2.3] SCROLL SHRINK
 ========================== */
 nav .navWrapper{
 	height: auto;
@@ -239,15 +240,21 @@ nav.navbar-default.shrink {
 	font-size: smaller;
 	padding: 0px !important;
 }
-.navWrapper.shrink{
-		height: 70px;
+#navScrollMe.shrink{
+		height: 60px;
+		padding: 0;
 	}
+
+.navItems a.shrink{
+	padding: 5px;
+}
 
 .brand.shrink{
 	width: 120px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+
 /*-- end shrink style--*/
 
 
@@ -402,6 +409,21 @@ nav .nav ul {
 [3] SOCIAL MEDIA
 ============= 
 */
+.socialWrap{ 
+	margin-top: 30px;
+	margin-bottom: 30px; 
+}
+
+
+.social_logo{
+	display: inline-block;
+	width: 60px;
+}
+
+.social_icons{
+	width: 32px;
+}
+
 
 
 /*
@@ -442,7 +464,7 @@ footer{
 	margin-top: 25px;
 }
 .footerList li {
-	font-size: 1.33em;
+	font-size: 1em;
 	color: #F6F6F6;
 	text-decoration: none;
 	list-style: none;
@@ -458,17 +480,17 @@ footer{
 }
 
 .footerList li:hover a:hover {
-	color: #FFBE6A; /*red brown*/
+	color: #FFBE6A; /*light_tangelo*/
 }
 
 /* Footer Terms and Cookies */
 
 
-.footLinks ul a { color: #FFFFFF; }
+.footLinks ul a { color: #FFBE6A; }
 
 .footLinks a:link {
-	color:#FFFFFF;
-	text-decoration:none; 
+	color:#FFBE6A;
+/*	text-decoration:none; */
 }
 
 .footLinks ul li {
@@ -478,7 +500,7 @@ footer{
 }	
 
 .footLinks ul li:hover a:hover {
-	color: #692E45; /*red brown*/
+	color: #FFBE6A; /*light_tangelo*/
 }
 
 
@@ -498,6 +520,7 @@ footer{
 }
 
 .copyright{
+	font-size:1.2em;
 	margin-top: 50px;
 	padding-bottom: 20px;
 }
@@ -769,6 +792,8 @@ nav ul li:hover a:hover {
 .white_smoke_txt {
 	color: #F6F6F6 !important;
 }
-
+.white_txt{
+	color: #FFFFFF !important;
+}
 
 
