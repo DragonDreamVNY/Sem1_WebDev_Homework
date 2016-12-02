@@ -625,6 +625,7 @@ footer{
 
 .thumbnail {
     padding: 0;
+    cursor: pointer;
 }
 
 /*=========================================
