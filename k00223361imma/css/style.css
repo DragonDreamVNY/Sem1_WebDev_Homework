@@ -29,12 +29,14 @@ TABLE OF CONTENTS
 [2.1] HOMEPAGE
 [2.2] PARALLAX
 [2.3] SCROLL SHRINK
+
 [3] SOCIAL MEDIA
 [4] CONTACT FORM
 [5] FOOTER
 
 [6] VISIT
 [7] COLLECTIONS
+[7.1] IMAGE GALLERY
 [8] EXHIBITIONS
 [9] EDUCATION
 [10] EVENTS
@@ -55,8 +57,8 @@ TABLE OF CONTENTS
 [0] RESET STYLES                            
 =============*/                               
 .padding-0{
-	padding-right: -15px; /* Removes the right gap */
-    padding-left: -15px;  /* Removes the left gap */
+	padding-right: 0px; /* Removes the right gap */
+    padding-left: 0px;  /* Removes the left gap */
 }
 
 .margin-centre{
@@ -89,27 +91,27 @@ CUSTOM FONT
 @font-face {
 	font-family: TruenoRg;
  	src: 
- 		url(fonts/TruenoRg.otf) format('opentype'),
-  		url(fonts/TruenoRg.woff) format('woff'),
- 		url(fonts/TruenoRg.ttf) format('truetype'),		
-  		url(fonts/TruenoRg.svg) format('svg'),
-  		url(fonts/TruenoRg.eot) format('embedded-opentype'); /*IE 6-8*/
+ 		url(../fonts/TruenoRg.otf) format('opentype'),
+  		url(../fonts/TruenoRg.woff) format('woff'),
+ 		url(../fonts/TruenoRg.ttf) format('truetype'),		
+  		url(../fonts/TruenoRg.svg) format('svg'),
+  		url(../fonts/TruenoRg.eot) format('embedded-opentype'); /*IE 6-8*/
 	font-weight: normal;
 
 	font-family: TruenoBd;
  	src: 
- 		url(fonts/TruenoBd.otf) format('opentype'),
-  		url(fonts/TruenoBd.woff) format('woff'),
- 		url(fonts/TruenoBd.ttf) format('truetype'),		
-  		url(fonts/TruenoBd.svg) format('svg'),
-  		url(fonts/TruenoBd.eot) format('embedded-opentype'); /*IE 6-8*/
+ 		url(../fonts/TruenoBd.otf) format('opentype'),
+  		url(../fonts/TruenoBd.woff) format('woff'),
+ 		url(../fonts/TruenoBd.ttf) format('truetype'),		
+  		url(../fonts/TruenoBd.svg) format('svg'),
+  		url(../fonts/TruenoBd.eot) format('embedded-opentype'); /*IE 6-8*/
 	font-weight: normal;
 }
 /*=========================================*/
 
 body {
-	color: #333355; /*deep_blue*/
-	background: #D5D5D5; /*light_gray*/
+	color: #333355;
+	background: #D5D5D5; 
 	font-family: TruenoRg, Open Sans, sans-serif;
 	cursor: default;
 	padding-top: 80px; /*for scroll nav*/
@@ -125,7 +127,7 @@ h3 {
 }
 /* Column headers*/
 .h2_centre{
-	font-style: TruenoBd, Open Sans, sans-serif;
+	font-family: TruenoBd, Open Sans, sans-serif;
 	color: #F6F6F6;
 	font-size: 1.5em;
 	margin: 5px;
@@ -244,9 +246,9 @@ nav.navbar-default.shrink {
 		height: 60px;
 		padding: 0;
 	}
-
-/*.navItems a.shrink{
-	padd*/ing: 5px;
+/*
+.navItems a.shrink{
+	padding: 5px;
 }
 
 .brand.shrink{
@@ -254,6 +256,7 @@ nav.navbar-default.shrink {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
+*/
 
 /*-- end shrink style--*/
 
@@ -350,6 +353,9 @@ nav .nav ul {
 
 	background-color: #6D7897;
 }
+
+
+
 /*
 =============
   _    _  ____  __  __ ______ 
@@ -366,7 +372,7 @@ nav .nav ul {
 .space{
 	margin-top: 20px;
 }
-.hero{
+/*.hero{
 	background: rgba(0, 0, 0, 0.5); 
     margin-top: 100px;
     padding: 10px;
@@ -374,7 +380,7 @@ nav .nav ul {
     border: 5px solid #F6F6F6;
     position: absolute;
     left: 20px;
-}
+}*/
 
 
 .wrapContainer{
@@ -410,7 +416,6 @@ nav .nav ul {
   padding-top: 130px;
   padding-bottom: 130px;
 }
-
 
 /*.content-space-two {
   padding: 0px;
@@ -518,8 +523,7 @@ footer{
 	color: #FFBE6A; /*light_tangelo*/
 }
 
-/* Footer Terms and Cookies */
-
+/* Footer Terms LISTINGS */
 
 .footLinks ul a { color: #FFBE6A; }
 
@@ -559,39 +563,6 @@ footer{
 	margin-top: 50px;
 	padding-bottom: 20px;
 }
-/*---------
-MEDIA
-
-Video / Audio 
-related styles
-
----------*/
-
-audio, 
-video {
- width: 100%;
-}​
-
-.youtubeWrapper{
-	display: block;
-	text-align: center
-}
-
-div.youtubeWrapper iframe {
-	margin: 0 auto;
-	width: 100%;
-	height: 320px;
-}
-
-/*---------
-Header Banner
----------*/
-
-
-/*---------
-ABOUT banner on HOMEPAGE
----------*/
-
 
 /*=========================================
 
@@ -641,6 +612,20 @@ ABOUT banner on HOMEPAGE
 =========================================*/
 
 
+/*=========================================
+[10.1] IMAGE GALLERY
+
+=========================================*/
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
 
 /*=========================================
   ________   ___    _ _____ ____ _____ _______ _____ ____  _   _  _____ 
@@ -683,7 +668,7 @@ ABOUT banner on HOMEPAGE
     display: block;
     margin: 0 auto;
     background-image: url('../images/canvas1.jpg');
-    background-image: -webkit-image-set(url('../images/canvas1.jpg') 1x, url('images/canvas1.jpg') 2x );
+    background-image: -webkit-image-set(url('../images/canvas1.jpg') );
     background-size: cover;
     width: 100%;
     max-width: 750px;
@@ -692,6 +677,8 @@ ABOUT banner on HOMEPAGE
     cursor: url(../images/cursor.png) 53 53, crosshair;
 
 }
+
+
 
 /*=========================================
  __      ________ _   _ _    _ ______   _    _ _____ _____  ______ 
@@ -762,7 +749,6 @@ ABOUT banner on HOMEPAGE
   \_____\____/|______\____/ \____/|_|  \_\_____/ 
                                                  
                                                  
-
 =========================================*/
 /*
 -------------------------------------
@@ -773,47 +759,27 @@ light_gray		#D5D5D5 	213 213 213
 deep_blue   	#333355		51 51 85	
 white_smoke 	#F6F6F6    	246 246 246  
 -------------------------------------
-
-Nav Buttons Colours
-nav ul li {
-	background-color: #6D7897;
-	color: #271721;
-}	
-
-nav ul a {
-	background-color: #6D7897;
-	color: #271721;
-}
-
-nav ul li:hover a:hover {
-	color: #FFBE6A; 
-	background-color: #6D7897;
-}
-
--------------------------------------
 */
 
 .rhythm_blue{
-	background-color: #6D7897;
+	background-color: #6D7897 !important;
 }
 
 .light_tangelo{
-	background-color: #FFBE6A;
+	background-color: #FFBE6A !important;
 }
 
 .light_gray{
-	background-color: #D5D5D5;
+	background-color: #D5D5D5 !important;
 }
 
 .deep_blue{
-	background-color: #333355;
+	background-color: #333355 !important;
 }
 
 .white_smoke {
-	background-color: #F6F6F6;
+	background-color: #F6F6F6 !important;
 }
-
-
 
 
 
@@ -836,6 +802,7 @@ nav ul li:hover a:hover {
 .white_smoke_txt {
 	color: #F6F6F6 !important;
 }
+
 .white_txt{
 	color: #FFFFFF !important;
 }

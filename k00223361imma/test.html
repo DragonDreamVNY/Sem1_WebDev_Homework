@@ -25,6 +25,9 @@
     <link href="css/style.css" rel="stylesheet">
     <!--mobile styles-->
     <link href="css/mobile.css" rel="stylesheet">
+
+
+    <!--header styles for testing-->
 <style type="text/css"> 
 
 .hide-bullets {
@@ -39,7 +42,85 @@
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img{
     width: 100%;
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
 }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+  filter: grayscale(1) blur(3px);
+  -webkit-filter: grayscale(1) blur(3px);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect a.info, .hovereffect h2 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.hovereffect:hover a.info, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
 
 </style>
 </head>
@@ -89,27 +170,12 @@
 	    	</div><!-- end NavWrapper-->
 		</nav>
 
-		<div class="content-space-one">
-                <div class="text-center light_tangelo_txt ">
-            <h2 class="heroParallax white_smoke_txt">EVENTS : IRISH MUSEUM OF MODERN ART</h2>
-                    <div class="page-break"></div>
-                <p></p>
-                </div>
-        </div>
 
 
-		<!-- 
-		REF:
-		http://thenewcode.com/1120/Scratch-Off-Reveal-with-HTML5-Canvas?ref=webdesignernews.com
- -->
 
 <!--===================
-			GALLERY 
+	GALLERY 
 ===================-->
-
-		
-
-
 <div class="container">
 <div id="main_area">
 <!-- Slider -->
@@ -119,30 +185,30 @@
     <ul class="hide-bullets">
         <li class="col-sm-3">
             <a class="thumbnail" id="carousel-selector-0">
-                <img src="http://placehold.it/150x150&text=zero">
+                <img src="images/0carousel-selector-150x150.jpg">
             </a>
         </li>
 
         <li class="col-sm-3">
-            <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+            <a class="thumbnail" id="carousel-selector-1"><img class="hovereffect" src="images/1carousel-selector-150x150.jpg"></a>
         </li>
 
         <li class="col-sm-3">
-            <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+            <a class="thumbnail" id="carousel-selector-2"><img class="hovereffect" src="images/2carousel-selector-150x150.jpg"></a>
         </li>
 
         <li class="col-sm-3">
-            <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+            <a class="thumbnail" id="carousel-selector-3"><img class="hovereffect" src="images/3carousel-selector-150x150.jpg"></a>
         </li>
 
         <li class="col-sm-3">
-            <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+            <a class="thumbnail" id="carousel-selector-4"><img class="hovereffect" src="images/4carousel-selector-150x150.jpg"></a>
         </li>
 
         <li class="col-sm-3">
-            <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
+            <a class="thumbnail" id="carousel-selector-5"><img class="hovereffect" src="images/5carousel-selector-150x150.jpg"></a>
         </li>
-        <li class="col-sm-3">
+        <!--  <li class="col-sm-3">
             <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
         </li>
 
@@ -150,7 +216,7 @@
             <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
         </li>
 
-        <li class="col-sm-3">
+       <li class="col-sm-3">
             <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
         </li>
 
@@ -178,7 +244,7 @@
 
         <li class="col-sm-3">
             <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
-        </li>
+        </li> -->
     </ul>
 </div>
 <div class="col-sm-6">
@@ -190,24 +256,24 @@
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="active item" data-slide-number="0">
-                            <img src="http://placehold.it/470x480&text=zero"></div>
+                            <img src="images/0carousel_470x480.jpg"></div>
 
                         <div class="item" data-slide-number="1">
-                            <img src="http://placehold.it/470x480&text=1"></div>
+                            <img src="images/1carousel_470x480.jpg"></div>
 
                         <div class="item" data-slide-number="2">
-                            <img src="http://placehold.it/470x480&text=2"></div>
+                            <img src="images/2carousel_470x480.jpg"></div>
 
                         <div class="item" data-slide-number="3">
-                            <img src="http://placehold.it/470x480&text=3"></div>
+                            <img src="images/3carousel_470x480.jpg"></div>
 
                         <div class="item" data-slide-number="4">
-                            <img src="http://placehold.it/470x480&text=4"></div>
+                            <img src="images/4carousel_470x480.jpg"></div>
 
                         <div class="item" data-slide-number="5">
-                            <img src="http://placehold.it/470x480&text=5"></div>
+                            <img src="images/5carousel_470x480.jpg"></div>
                         
-                        <div class="item" data-slide-number="6">
+                        <!-- <div class="item" data-slide-number="6">
                             <img src="http://placehold.it/470x480&text=6"></div>
                         
                         <div class="item" data-slide-number="7">
@@ -235,7 +301,7 @@
                             <img src="http://placehold.it/470x480&text=14"></div>
 
                         <div class="item" data-slide-number="15">
-                            <img src="http://placehold.it/470x480&text=15"></div>
+                            <img src="http://placehold.it/470x480&text=15"></div> -->
                     </div>
                     <!-- Carousel nav -->
                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -258,8 +324,16 @@
 
 
 
-
-
+	<!--try to use CDN first for minified JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- fallback if in Mother China -->
+	<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js">\x3C/script>') </script>
+	
+	<!--try to use CDN first for BootStrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!--if CDN file isn't delivered, send a local file-->
+	<script>$.fn.modal || document.write('<script src="Script/bootstrap.min.js">\x3C/script>')</script>
 
 
 
@@ -292,6 +366,5 @@ jQuery(document).ready(function($) {
 	
 
 
-<!-- <script src="js/local.js"></script> -->
 </body>
 </html>

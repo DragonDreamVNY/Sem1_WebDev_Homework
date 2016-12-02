@@ -66,7 +66,7 @@
             font-size: 1.5em !important;
      }
 	h4{
-		font-style: TruenoBd, Open Sans, sans-serif;
+		font-family: TruenoBd, Open Sans, sans-serif;
 	}
      .text_col{
      	font-size: 1.33em;
@@ -179,10 +179,7 @@
 		padding-left: 20px;
 	}
 
-	.navbar-toggle{
-		margin-top: : 20px;
-		margin-bottom: : 10px;
-	}
+
 	/*-- shrink style on sm --*/
 	.brand.shrink{
 		width: 95px;

@@ -29,8 +29,8 @@ function initJS () {
 
 
 function formInfo () {
-	inKey = document.getElementById('nameKey').value;
-	inVal = document.getElementById('userEmail').value;
+	inKey = document.getElementById('name').value;
+	inVal = document.getElementById('email').value;
 
 	console.log(inKey, inVal);
 
@@ -38,8 +38,8 @@ function formInfo () {
 		localStorage.setItem(inKey, inVal);
 
 		document.getElementById('message').innerHTML = "Data Entered:"
-		document.getElementById('nameKey').innerHTML = inKey;
-		document.getElementById('userEmail').innerHTML = localStorage.getItem(inKey);
+		document.getElementById('name').innerHTML = inKey;
+		document.getElementById('email').innerHTML = localStorage.getItem(inKey);
 
 	} else{
 		document.getElementById('message').innerHTML = "Key Error: no data entered"
