@@ -679,11 +679,18 @@ ABOUT banner on HOMEPAGE
                                                                                                          
 [10] EVENTS                                                                                                                                                                       
 =========================================*/
-#canvas1 {
-max-width: 100%;
-height: auto;
-background: url("../images/stan_douglas_gallery_web495_IMMA.jpg") no-repeat;
-background-size: 100%;
+#bridge {
+    display: block;
+    margin: 0 auto;
+    background-image: url('../images/canvas1.jpg');
+    background-image: -webkit-image-set(url('../images/canvas1.jpg') 1x, url('images/canvas1.jpg') 2x );
+    background-size: cover;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    cursor:  crosshair;
+    cursor: url(../images/cursor.png) 53 53, crosshair;
+
 }
 
 /*=========================================
