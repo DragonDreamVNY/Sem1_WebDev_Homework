@@ -45,7 +45,7 @@ function formInfo () {
 		document.getElementById('message').innerHTML = "Key Error: no data entered"
 	}
 }
-/*
+
 function simpleSetRetrieve () {
 	localStorage.setItem('simpleName','This is some simple data');
 
@@ -56,8 +56,8 @@ function simpleSetRetrieve () {
 	document.getElementById('StrTestData').innerHTML = output;
 
 }
-*/
-/*
+
+
 
 var exObject = {
 
@@ -78,8 +78,8 @@ var exObject = {
 		this.number = val;
 	},
 }
-*/
-/*
+
+
 function showRetObj (obj) {
 	console.log(obj);
 
@@ -92,12 +92,12 @@ function showRetObj (obj) {
 
 	document.getElementById('ObjTestData').innerHTML = output;
 }
-*/
+
 
 
 window.onload = initJS;
 
-/*exObject.setName('This is my example object to store in localStorage');
+exObject.setName('This is my example object to store in localStorage');
 exObject.setNumber(14);
 
 console.log(exObject.getName());
@@ -112,4 +112,4 @@ console.log(retObj);
 
 showRetObj(retObj);
 
-simpleSetRetrieve();*/
+simpleSetRetrieve();
